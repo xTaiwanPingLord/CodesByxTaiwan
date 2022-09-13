@@ -1,0 +1,30 @@
+{
+    "settings":{
+        "func1":{
+            "name": {
+                "en-us": "English is great 1"
+            },
+            "desc": {
+                "en-us": "English is great 2"
+            }
+        },
+        "func2":{
+            "name": {
+                "en-us": "English is great 3"
+            },
+            "desc": {
+                "en-us": "English is great 4"
+            }
+        }
+    },
+    "setting2":{
+        "func3":{
+            "name":"中文3",
+            "desc no:":"24331276"
+        },
+        "func4":{
+            "name":"中文4",
+            "desc no:":"24331276"
+        }
+    }
+}
