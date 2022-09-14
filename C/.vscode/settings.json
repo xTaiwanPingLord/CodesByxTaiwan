@@ -12,7 +12,7 @@
  
  
       "c": "gcc '$fileName' -finput-charset=utf-8 -o './executables/$fileNameWithoutExt.exe' -Wall -O2 -m64 -lm -static-libgcc -std=c17 -fexec-charset=utf-8 -I D:\\_Code\\C\\include && &'./executables/$fileNameWithoutExt.exe'",
-      "cpp": "g++ '$fileName' -finput-charset=utf-8 -o  './executables/$fileNameWithoutExt.exe' -Wall -O2 -m64 -static-libgcc -std=c++17 -fexec-charset=utf-8 -I D:\\_Code\\C\\include && &'./executables/$fileNameWithoutExt.exe'"
+      "cpp": "g++ '$fileName' -finput-charset=utf-8 -o  './executables/$fileNameWithoutExt.exe' -Wall -O2 -m64 -static-libgcc -std=c++20 -fexec-charset=utf-8 -I D:\\_Code\\C\\include && &'./executables/$fileNameWithoutExt.exe'"
       // "c": "gcc $fileName -o $fileNameWithoutExt.exe -Wall -O2 -m64 -lm -static-libgcc -std=c11 -fexec-charset=GBK && $dir$fileNameWithoutExt.exe",
       // "cpp": "g++ $fileName -o $fileNameWithoutExt.exe -Wall -O2 -m64 -static-libgcc -std=c++14 -fexec-charset=GBK && $dir$fileNameWithoutExt.exe"
   }, // 右鍵run code時執行的命令；未註釋的僅適用於PowerShell（Win10預設）和pwsh，檔名中有空格也可以編譯執行；註釋掉的適用於cmd（win7預設）、PS和bash，但檔名中有空格時無法執行

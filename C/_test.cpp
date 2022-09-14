@@ -6,17 +6,18 @@ using namespace ::std;
 class test
 {
 public:
-    int var1;
+    void SetVar1(int set) { var1 = set; };
+    auto Lambda = [this]() -> int{ var 1 = 20; return var1; };
 protected:
-    
 private:
-
+    int var1;
 };
 
-int
-main()
+int main()
 {
-    test t1;
-    t1.var1 = 0;
-    cout << t1.var1;
+    test t;
+    t.SetVar1(10);
+
+    cout << t.Lambda;
 }
+
