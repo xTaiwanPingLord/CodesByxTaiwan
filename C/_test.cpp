@@ -7,7 +7,7 @@ class test
 {
 public:
     void SetVar1(int set) { var1 = set; };
-    auto Lambda = [this]() -> int{ var 1 = 20; return var1; };
+    int Test1 = [this](int a) -> auto { var1 += a; return var1; };
 protected:
 private:
     int var1;
@@ -18,6 +18,6 @@ int main()
     test t;
     t.SetVar1(10);
 
-    cout << t.Lambda;
+    cout << t.Test1(15);
 }
 

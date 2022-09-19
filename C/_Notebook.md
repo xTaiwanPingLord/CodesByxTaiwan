@@ -62,3 +62,5 @@ auto function =
 # Fun
 - [如何写出无法维护的代码](https://coolshell.cn/articles/4758.html)
 - [五种应该避免的代码注释](https://coolshell.cn/articles/2746.html)
+- [如何加密/混乱C源代码](https://coolshell.cn/articles/933.html)
+- 
