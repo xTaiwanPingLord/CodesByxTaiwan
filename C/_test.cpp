@@ -3,21 +3,10 @@
 #include <vector>
 using namespace ::std;
 
-class test
-{
-public:
-    void SetVar1(int set) { var1 = set; };
-    int Test1 = [this](int a) -> auto { var1 += a; return var1; };
-protected:
-private:
-    int var1;
-};
-
 int main()
 {
-    test t;
-    t.SetVar1(10);
-
-    cout << t.Test1(15);
+    // while (1)
+    //     cout << [](){static int a; a *= 2; return a; };
+    for(int i=1;; i=i*2)printf("%d ", i);
 }
 
