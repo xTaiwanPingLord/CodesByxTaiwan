@@ -1,4 +1,5 @@
 {
     "python.terminal.activateEnvironment": true,
-    "python.condaPath": "C:\\ProgramData\\Anaconda3\\Scripts"
+    "python.condaPath": "C:\\ProgramData\\Anaconda3\\Scripts",
+    "git.ignoreLimitWarning": true
 }
