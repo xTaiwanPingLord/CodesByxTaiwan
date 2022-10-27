@@ -49,14 +49,18 @@ class Up(nn.Module):
         self.conv = DoubleConv(in_channels, out_channels)
 
     def forward(self, x1, x2):
+        print(x1.size())
+        print(x2.size())
         x1 = self.up(x1)
         # input is CHW
         diffY = torch.tensor([x2.size()[2] - x1.size()[2]])
         diffX = torch.tensor([x2.size()[3] - x1.size()[3]])
-
+        print(x1.size())
         x1 = nn.functional.pad(x1, [diffX // 2, diffX - diffX // 2,
                                     diffY // 2, diffY - diffY // 2])  # Extend the tensor
+        print("x1 size after pad: {}".format(x1.size()))
         x = torch.cat([x2, x1], dim=1)  # 將兩個Tensor拼在一起 dim1 代表橫著拼接 x2左x1右
+        print("x size after cat: {}".format(x.size()))
         return self.conv(x)
 
 
@@ -93,6 +97,12 @@ class UNet(nn.Module):
         x3 = self.down2(x2)
         x4 = self.down3(x3)
         x5 = self.down4(x4)
+        print(x.size())
+        print(x1.size())
+        print(x2.size())
+        print(x3.size())
+        print(x4.size())
+        print(x5.size())
         x = self.up1(x5, x4)
         x = self.up2(x, x3)
         x = self.up3(x, x2)
