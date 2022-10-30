@@ -22,7 +22,7 @@ torch.cuda.device
 """ Configs """
 device = 'cuda' #if torch.cuda.is_available() else 'cpu'
 config = {
-    'seed': 9783883,      # Your seed number, you can pick your lucky number. :) 9783883 1.09 1.03
+    'seed': 10270406,      # Your seed number, you can pick your lucky number. :)
     'select_all': False,   # Whether to use all features.
     'valid_ratio': 0.2,   # validation_size = train_size * valid_ratio
     'n_epochs': 3000,     # Number of epochs.
