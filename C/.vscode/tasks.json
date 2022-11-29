@@ -7,7 +7,7 @@
             "args": [
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\executables\\${fileBasenameNoExtension}.exe",
                 "-g",
                 "-m64",
                 "-Wall",
@@ -42,7 +42,10 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "detail": "偵錯工具產生的工作。"
         }
     ]

@@ -1,7 +1,11 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
         {
-            "name": "C/C++: g++.exe 建置及偵錯使用中的檔案",
+            "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\executables\\${fileBasenameNoExtension}.exe",
@@ -19,24 +23,13 @@
                     "ignoreFailures": true
                 },
                 {
-                    "description": "將反組譯碼變體設為 Intel",
+                    "description":  "將反組譯碼變體設為 Intel",
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe 建置使用中檔案"
-        },
-        {
-            "name": "(Windows) Launch",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "輸入程式名稱，例如 ${workspaceFolder}/a.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "console": "externalTerminal"
+            "preLaunchTask": "Compile"
         }
-    ],
-    "version": "2.0.0"
+
+    ]
 }

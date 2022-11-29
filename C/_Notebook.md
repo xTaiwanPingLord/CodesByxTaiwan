@@ -42,7 +42,7 @@
 - [ios::sync_with_stdio(0), cin.tie(0);](https://liam.page/2016/11/19/the-speed-of-reading-files-in-Cpp/#std-cin-%E5%81%9A%E4%BA%86%E5%93%AA%E4%BA%9B%E9%A2%9D%E5%A4%96%E7%9A%84%E5%B7%A5%E4%BD%9C)
 - prevent using `endl;`
 
-# OOP
+# ?
 ## [Lambda expressions(c++)](https://en.cppreference.com/w/cpp/language/lambda)
 `[capture list] (params list) mutable exception-> return type { function body }`
 `[capture list] (params list) {function body;}` compiler set return type automatically

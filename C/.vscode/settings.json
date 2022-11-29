@@ -72,7 +72,15 @@
     "typeinfo": "cpp",
     "chrono": "cpp",
     "ranges": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "any": "cpp",
+    "codecvt": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "cstring": "cpp",
+    "forward_list": "cpp",
+    "map": "cpp",
+    "ratio": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled", // 格式化時調整include的順序（按字母排序）
 }

@@ -10,5 +10,7 @@
         "board/esp32c3-builtin.cfg"
     ],
     "idf.pythonBinPathWin": "C:\\ESP\\.espressif\\python_env\\idf4.4_py3.8_env\\Scripts\\python.exe",
-    "idf.toolsPathWin": "C:\\ESP\\.espressif"
+    "idf.toolsPathWin": "C:\\ESP\\.espressif",
+    "idf.portWin": "COM7",
+    "idf.flashType": "UART"
 }
