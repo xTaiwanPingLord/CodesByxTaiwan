@@ -31,8 +31,13 @@
             "command": "C:\\_APP\\TDM-GCC\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "-finput-charset=utf-8",
+                "-Wall",
+                "-O2",
+                "-m64",
                 "-g",
                 "${file}",
+                "-fexec-charset=utf-8",
                 "-o",
                 "${fileDirname}\\executables\\${fileBasenameNoExtension}.exe"
             ],

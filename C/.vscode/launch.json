@@ -18,9 +18,13 @@
             "miDebuggerPath": "C:\\_APP\\TDM-GCC\\bin\\gdb.exe",
             "setupCommands": [
                 {
-                    "description": "啟用 gdb 的美化顯示",
+                    "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
+                },
+                {
+                    "description": "Fix pretty-printing for gdb",
+                    "text": "-exec set charset UTF-8"
                 },
                 {
                     "description":  "將反組譯碼變體設為 Intel",

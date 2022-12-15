@@ -1,81 +1,82 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
-
-int R, C, n, pos, blocks, ins, Max;
-char type;
 
 int main()
 {
-    cin >> R >> C >> n;
-    vector<int> peak(R);
+    ios::sync_with_stdio(false);
+    cin.tie(0);
 
-    for (int i = 0; i < n; i++)
+    int people, num_eliminate, loop;
+    uint64_t a, b, c, d;
+    cin >> people >> num_eliminate;
+    vector<uint64_t> S(people, 0), T(people, 0);
+    vector<int> idx(people, 0), eliminate(people, 0);
+
+    for (uint64_t &i : S)
     {
-        cin >> type >> pos;
-        Max = -1;
+        cin >> i;
+    }
+    for (uint64_t &i : T)
+    {
+        cin >> i;
+    }
+    for (int &i : idx)
+    {
+        cin >> i;
+        i--;
+    }
 
-        if (type == 'A')
+    while (idx.size() != 1)
+    {
+        // loop = (uint64_t)idx.size();
+        loop = (uint64_t)idx.size() / 2;
+        for (int i = 0; i < loop; i++)
         {
-            for (int j = 0; j < 4; j++)
+            // cout << loop;
+            a = S[idx[i]];
+            b = T[idx[i]];
+            c = S[idx[i + 1]];
+            d = T[idx[i + 1]];
+
+            if (a*b >= c*d)
             {
-                Max = max(Max, peak[pos + j]);
-            }
-            if (Max < C)
-            {
-                ins++;
-                for (int j = 0; j < 4; j++)
+                S[idx[i]] = a + (c * d) / (2 * b);
+                T[idx[i]] = b + (c * d) / (2 * a);
+                S[idx[i + 1]] = c + c / 2;
+                T[idx[i + 1]] = d + d / 2;
+                eliminate[idx[i + 1]]++;
+                if (eliminate[idx[i + 1]] < num_eliminate)
                 {
-                    blocks++;
-                    peak[pos + j] = Max + 1;
+                    // cout << " case1 " << endl;
+                    idx.push_back(idx[i + 1]);
+                    idx.erase(idx.begin() + i + 1);
+                }
+                else
+                {
+                    // cout << " case2 " << endl;
+                    idx.erase(idx.begin() + i + 1);
+                }
+            }
+            else
+            {
+                S[idx[i]] = a + a / 2;
+                T[idx[i]] = b + b / 2;
+                S[idx[i + 1]] = c + (a * b) / (2 * d);
+                T[idx[i + 1]] = d + (a * b) / (2 * c);
+                eliminate[idx[i]]++;
+                if (eliminate[idx[i]] < num_eliminate)
+                {
+                    // cout << " case3 " << endl;
+                    idx.push_back(idx[i]);
+                    idx.erase(idx.begin() + i);
+                }
+                else
+                {
+                    // cout << " case4 " << endl;
+                    idx.erase(idx.begin() + i);
                 }
             }
         }
-        else if (type == 'B')
-        {
-            if ((peak[pos] + 2) < C)
-            {
-                ins++;
-                blocks += 3;
-                peak[pos] += 3;
-            }
-        }
-        else if (type == 'C')
-        {
-            Max = max(peak[pos], peak[pos + 1]);
-            if ((Max + 1) < C)
-            {
-                ins++;
-                blocks += 4;
-                peak[pos] = Max + 2;
-                peak[pos + 1] = Max + 2;
-            }
-        }
-        else if (type == 'D')
-        {
-            Max = max(peak[pos], peak[pos + 1] + 2);
-            if (Max < C)
-            {
-                ins++;
-                blocks += 4;
-                peak[pos] = Max + 1;
-                peak[pos + 1] = peak[pos];
-            }
-        }
-        else if (type == 'E')
-        {
-            Max = max(peak[pos + 1], peak[pos + 2]) + 1;
-            Max = max(Max, peak[pos]);
-            if (Max < C)
-            {
-                ins++;
-                blocks += 5;
-                peak[pos] = Max + 1;
-                peak[pos + 1] = peak[pos];
-                peak[pos + 2] = peak[pos];
-            }
-        }
     }
-
-    cout << R * C - blocks << " " << n - ins;
+    cout << idx[0] + 1;
 }
