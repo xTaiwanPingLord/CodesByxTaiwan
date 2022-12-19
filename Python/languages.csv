@@ -4,9 +4,9 @@
 """The Catch""","""The Catch""",「渔获」,「漁獲」,"""The Catch"""
 0culi Teleport,0culi Teleport,神瞳传送,神瞳傳送,0кусулы телепорт
 A Thousand Floating Dreams,A Thousand Floating Dreams,千夜浮梦,千夜浮夢,A Thousand Floating Dreams
-AD,AD,包满禁用,包滿禁用,
-AP,AP,拾取,拾取,
-AT,AT,交互,交互,
+AD,AD,包满禁用,包滿禁用,AD
+AP,AP,拾取,拾取,AP
+AT,AT,交互,交互,AT
 Abiding Angelfish,Abiding Angelfish,长生仙,長生仙,Abiding Angelfish
 Ability Log [DEBUG],Ability Log [DEBUG],技能日志[调试],技能日誌[偵錯],Логи способностей [DEBUG]
 Ability Reduce,Ability Reduce,属性降低(暂),屬性降低(暫),Уменьшеньшение способности
@@ -17,9 +17,11 @@ Account Name,Account Name,账号名称,帳號名稱,Имя аккаунта
 Account Switcher,Account Switcher,账号切换器,帳號切換器,Менеджер аккаунтом
 Account list,Account list,账号列表,帳號列表,Account list
 "Account was updated.
-Config profile was changed.",,"账户已更新。
+Config profile was changed.","Account was updated.
+Config profile was changed.","账户已更新。
 配置文件已更换。","賬戶已更新。
-配置文件已更換。",
+配置文件已更換。","Account was updated.
+Config profile was changed."
 Accounts,Accounts,账号,帳號,Accounts
 Acl,Acl,账号列表,帳號列表,Acl
 Actions,Actions,行为,行為,Actions
@@ -63,7 +65,9 @@ Useful if you want to temporarily go faster/slower than the no-clip speed settin
 Useful if you want to temporarily go faster/slower than the no-clip speed setting."
 "Allows you to customize the element type of damage.
 This may not work for some characters. 
-(If you want to completely close this function, you need to reload the scene, e.g. entering the dungeon or re-entering the game)",,"使你可以修改伤害的元素类型
+(If you want to completely close this function, you need to reload the scene, e.g. entering the dungeon or re-entering the game)","Allows you to customize the element type of damage.
+This may not work for some characters. 
+(If you want to completely close this function, you need to reload the scene, e.g. entering the dungeon or re-entering the game)","使你可以修改伤害的元素类型
  有些角色可能没用
  （如果要彻底关闭这个功能，你需要重新加载场景，比如重进游戏或者进副本）","使你可以修改傷害的元素類型
 有些角色可能沒用
@@ -130,7 +134,7 @@ Attacks per Tree,Attacks per Tree,每颗树攻击次数,每顆樹攻擊次數,А
 Auto,Auto,自动,自動,Авто
 Auto Challenge,Auto Challenge,自动挑战,自動挑戰,Auto Challenge
 Auto Cook,Auto Cook,自动烹饪,自動烹飪,Автоматическая готовка
-Auto Cooking [Proficiency],Auto Cooking [Proficiency],,,Автоматическая готовка [Мастерство]
+Auto Cooking [Proficiency],Auto Cooking [Proficiency],自动烹饪 [熟练程度],自動烹飪 [熟練程度],Автоматическая готовка [Мастерство]
 "Auto Cooking [Standart, %s]","Auto Cooking [Standart, %s]","自动烹饪 [标准, %s]","自動烹飪 [標準, %s]","Авто готовка [Standart, %s]"
 Auto Destroy Objects,Auto Destroy Objects,自动摧毁物体,自動摧毀物體,Авторазрушение Объектов (камни/руда)
 Auto Electro seelie,Auto Electro seelie,自动雷灵,自動雷靈,Автоматическое сопровождение электрофей
@@ -138,7 +142,6 @@ Auto Fish,Auto Fish,自动钓鱼,自動釣魚,Авторыбалка
 Auto Loot,Auto Loot,自动收集,自動收集,Автолут
 Auto Run,Auto Run,自动奔跑,自動奔跑,Автобег
 Auto Seelie,Auto Seelie,自动仙灵,自動仙靈,Автоматическое сопровождение фей
-Auto Sellie,,,,Автоматическое сопровождение фей
 Auto Talk,Auto Talk,自动对话,自動對話,Авто Разговор
 Auto Teleport,Auto Teleport,自动传送,自動傳送,Автотелепорт
 Auto Tree Farm,Auto Tree Farm,自动砍树,自動砍樹,Автоматический фарм дерева
@@ -148,7 +151,7 @@ Auto destroy bombbarrel,Auto destroy bombbarrel,自动摧毁炸药桶,自動摧�
 Auto disable pickup (on full),Auto disable pickup (on full),自动关闭拾取(背包已满时),自動關閉拾取(背包已滿時),Выключение автоподбора (при полном инвентаре)
 Auto disable when bag is full,Auto disable when bag is full,当背包上限时自动关闭,當背包上限時自動關閉,Автовыклчюение когда инентарь полон
 Auto follow seelie to its home,Auto follow seelie to its home,自动跟随仙灵到家,自動跟隨仙靈到家,Автоматическое сопровождение фей до дома
-Auto weakspot,,自动弱点,自動弱點,автоматическая слабость
+Auto weakspot,Auto weakspot,自动弱点,自動弱點,автоматическая слабость
 Auto-Pickup,Auto-Pickup,自动拾取,自動拾取,Авто подбор
 Auto-Treasure,Auto-Treasure,自动交互,自動寶藏,Автоматические открытие сундуков
 Auto-select Dialog,Auto-select Dialog,自动选择对话选项,自動選擇對話選項,Автовыбор ответов в диалогах
@@ -233,7 +236,6 @@ Bloatty Floatty,Bloatty Floatty,蓬蓬果,蓬蓬果,Раздутый
 Block User Input,Block User Input,拦截用户输入,攔截使用者輸入,Block User Input
 Block WindSeed,Block WindSeed,拦截WindSeed,攔截WindSeed,Block WindSeed
 Blocks the WindSeed Packet which can cause RCE from malicious private servers. Only use it on private servers.,Blocks the WindSeed Packet which can cause RCE from malicious private servers. Only use it on private servers.,阻止来自恶意服务器可能导致 RCE 的 WindSeed 数据包. 仅在私服使用,阻止來自惡意伺服器可能導致 RCE 的 WindSeed 封包. 僅在私服使用,Blocks the WindSeed Packet which can cause RCE from malicious private servers. Only use it on private servers.
-Blocks the WindSeed Packet which can cause RCE from malicious servers.,Blocks the WindSeed Packet which can cause RCE from malicious servers.,,,Blocks the WindSeed Packet which can cause RCE from malicious servers.
 Bloodtainted Greatsword,Bloodtainted Greatsword,沐浴龙血的剑,沐浴龍血的劍,Bloodtainted Greatsword
 Blue Frog,Blue Frog,蓝蛙,藍蛙,Blue Frog
 Blue Horned Lizard,Blue Horned Lizard,蓝角蜥,藍角蜥,Blue Horned Lizard
@@ -255,7 +257,7 @@ Boss,Boss,Boss,Boss,Босс
 Bouncy Mushroom,Bouncy Mushroom,弹弹菇,彈彈菇,Пружинистый гриб
 Bow,Bow,弓,弓,Лук
 Bows,Bows,弓,弓,Bows
-Box,Box,,,Box
+Box,Box,箱型,箱型,Box
 Box Color,Box Color,边框颜色,邊框顏色,Box Color
 Bramble,Bramble,在荆棘中,在荊棘中,Корни
 Brightcrown Pigeon,Brightcrown Pigeon,璃冠鸽,璃冠鴿,Brightcrown Pigeon
@@ -265,7 +267,7 @@ Browser,Browser,浏览器,瀏覽器,Browser
 Buried Chest,Buried Chest,掩埋的宝箱,掩埋的寶箱,Спрятанный сундук
 Butterfly Wings,Butterfly Wings,蝴蝶翅膀,蝴蝶翅膀,Крылья Бабочки
 Butterfly Wings,Butterfly Wings,蝴蝶翅膀,蝴蝶翅膀,Butterfly Wings
-CR,CR,范围,範圍,
+CR,CR,范围,範圍,NEED TO BE TRANSLATED
 Calamity Queller,Calamity Queller,息灾,息災,Calamity Queller
 "Calculate how many attacks needed to kill an enemy based on their HP
 and uses that to set the multiplier accordingly.
@@ -330,7 +332,7 @@ Changes the level visually.,Changes the level visually.,修改显示的玩家等
 Changes the nickname visually.,Changes the nickname visually.,修改显示的昵称,修改顯示的暱稱,Визуально меняет никнейм.
 Changes the world-level visually.,Changes the world-level visually.,修改显示的世界等级,修改顯示的世界等級,Визуально меняет уровень мира.
 Character,Character,角色,角色,Character
-Character Filters,,角色过滤器,角色過濾器,
+Character Filters,Character Filters,角色过滤器,角色過濾器,Character Filters
 Cheat status,Cheat status,宝箱状态,寶箱狀態,Cheat status
 Chest,Chest,宝箱,寶箱,Chest
 Chest Indicator,Chest Indicator,宝箱指示器,寶箱指示器,Chest Indicator
@@ -362,14 +364,14 @@ Complete nearest point,Complete nearest point,完成附近点位,完成附近點
 Complete only showed,Complete only showed,仅完成已显示的点位,僅完成已顯示的點位,Complete only showed
 Complete performed only to visible points.,Complete performed only to visible points.,仅对可见点完成,僅對可見點完成,Complete performed only to visible points.
 Complete performs within specified range. If 0 - unlimited.,Complete performs within specified range. If 0 - unlimited.,完成的范围. 如果为0，就无限制。,完成的範圍. 如果為0，就無限制。,Complete performs within specified range. If 0 - unlimited.
-Complete progress,,完成所有进度,完成所有進度,
+Complete progress,Complete progress,完成所有进度,完成所有進度,Complete progress
 Completed point transparency,Completed point transparency,完成点透明度,完成點透明度,Completed point transparency
 Completed points transparency.,Completed points transparency.,完成点透明度,完成點透明度,Completed points transparency.
 Compound Bow,Compound Bow,钢轮弓,鋼輪弓,Compound Bow
 Condition,Condition,条件,條件,Условие
 Conditional,Conditional,触发条件,觸發條件,Условный
 Config and filters will be in separate windows.,Config and filters will be in separate windows.,配置与过滤器在独立的窗口显示。,配置與過濾器在獨立的視窗顯示。,Config and filters will be in separate windows.
-Config multi-account,,多账户配置,多賬戶配置,
+Config multi-account,Config multi-account,多账户配置,多賬戶配置,Config multi-account
 Config profile configuration,Config profile configuration,配置文件配置器,配置文件配置器,Config profile configuration
 "Configure to how many times it will update the animation state.
 Results can vary alongside Animation State","Configure to how many times it will update the animation state.
@@ -405,9 +407,9 @@ Set to 0 for unlimited attacks (even empty trees, extremely high risk).
 Note: Memorized trees' attacks are reset after game restart."
 Crab,Crab,螃蟹,螃蟹,Краб
 Crane,Crane,蓝翎鹭,藍翎鷺,Crane
-Crash,Crash,,,Crash
+Crash,Crash,坠落伤害,墜落傷害,Crash
 Crash Attack Delay (ms),Crash Attack Delay (ms),伤害间隔延迟(毫秒),傷害間隔延遲(毫秒),Crash Attack Delay (ms)
-Crash Damage Mode,Crash Damage Mode,伤害模式,傷害模式,Crash Damage Mode
+Crash Damage Mode,Crash Damage Mode,坠落伤害模式,坠落傷害模式,Crash Damage Mode
 Crash Repeat Delay (ms),Crash Repeat Delay (ms),伤害循环延迟(毫秒),傷害循環延遲(毫秒),Crash Repeat Delay (ms)
 Crash damage value,Crash damage value,坠落伤害数值,墜落傷害數值,Crash damage value
 Crash damage with percent value.,Crash damage with percent value.,坠落伤害将造成百分比伤害,墜落傷害將造成百分比傷害,Crash damage with percent value.
@@ -431,11 +433,11 @@ Crystalfish,Crystalfish,水晶宴,水晶宴,Crystalfish
 Cube Devices,Cube Devices,解谜魔方,解謎魔方,Cube Devices
 Cuihua Wood,Cuihua Wood,萃华木,萃華木,Cuihua Wood
 CurExp,CurExp,当前经验值,當前經驗值,Текущий опыт
-Custom Element,,自定义元素,自定義元素,пользовательский элемент
+Custom Element,Custom Element,自定义元素,自定義元素,пользовательский элемент
 Custom Pickup Range,Custom Pickup Range,范围拾取,範圍拾取,Дальность подбора
 Custom Profile,Custom Profile,自定义资料卡,自定義配置,Custom Profile
 Custom Profile.,Custom Profile.,自定义资料卡,自定義配置,Custom Profile.
-Custom Teleport,Custom Teleport,,,Custom Teleport
+Custom Teleport,Custom Teleport,自定义传送,自定義傳送,Custom Teleport
 Custom Teleports,Custom Teleports,自定义传送,自定義傳送,Custom Teleports
 Custom Weather,Custom Weather,自定义天气,自定義天氣,Custom Weather
 Custom Weather.,Custom Weather.,自定义天气,自定義天氣,Custom Weather.
@@ -450,7 +452,7 @@ Dark Iron Sword,Dark Iron Sword,暗铁剑,暗鐵劍,Dark Iron Sword
 Dawncatcher,Dawncatcher,擒霞客,擒霞客,Dawncatcher
 Day Night Switching Mechanism,Day Night Switching Mechanism,昼夜切换机制,晝夜切換機制,Механизм переключения дня-ночи
 Deathmatch,Deathmatch,决斗之枪,決鬥之槍,Deathmatch
-Deattach,,解除附加,解除連結,
+Deattach,Deattach,解除附加,解除連結,Deattach
 Debate Club,Debate Club,以理服人,以理服人,Debate Club
 Debug,Debug,调试,調試,Откладка
 Debug Animations,Debug Animations,调试动画,調試動畫,Анимации отладки
@@ -495,10 +497,10 @@ Delay in ms before next crash damage.,Delay in ms before next crash damage.,对�
 Delay randomly fluctuates between 'Delay Time'+'Delay Time+range',Delay randomly fluctuates between 'Delay Time'+'Delay Time+range',拾取延迟将在 拾取延迟 和 拾取延迟+延迟范围 之间随机。,拾取延遲將在 拾取延遲 和 拾取延遲+延遲範圍 之間隨機。,Задержка случайно выбирается между 'Время задержки'+'Время задержки+диапазон'
 Delay range +(ms),Delay range +(ms),延迟范围+(毫秒),延遲範圍+(毫秒),Диапазон задержки +(ms)
 Delay to repeat animation,Delay to repeat animation,重复动画延迟,重覆動畫延遲,Задержка повтора анимации
-Delete,,删除,刪除,
+Delete,Delete,删除,刪除,Delete
 Delete Checked,Delete Checked,删除选中,刪除選中,Удалить отмеченное
 Delete Theme,Delete Theme,删除主题,刪除主題,Удалить тему
-Delicious,,美味的,美味的,
+Delicious,Delicious,美味的,美味的,Delicious
 Dendro,Dendro,草,草,Dendro
 Dendro Crystalfly,Dendro Crystalfly,草晶蝶,草晶蝶,Dendro Crystalfly
 Dendro Granum,Dendro Granum,草种子,祥草楊枝,Дендрогранум
@@ -543,7 +545,7 @@ Known issues with Fischl.","删除弓箭蓄力所需要的时间。
 目前 菲谢尔 存在bug。","刪除弓箭蓄力所需要的時間。
 目前 菲謝爾 存在bug。","Отключить время зарядки лука.
 Известны проблемы с Фишль."
-Disabled,,关闭,關閉,
+Disabled,Disabled,关闭,關閉,Disabled
 Disables player animations.,Disables player animations.,关闭玩家动画。允许空中释放技能,關閉玩家動畫,Отключить анимацию персонажа.
 Discord invite link,Discord invite link,Discord邀请链接,Discord邀請連結,Discord invite link
 Distance (m),Distance (m),距离(米),距離(米),Дистанция (m)
@@ -585,13 +587,13 @@ Example path: C:\Dress.png","穿着纹理。
 範例路徑: C:\Dress.png","Текстура одежды.
 Пример пути: C:\Dress.png"
 Drop Items,Drop Items,掉落道具,掉落道具,Drop Items
-Drop progress,,清理所有进度,清理所有進度,
+Drop progress,Drop progress,清理所有进度,清理所有進度,Drop progress
 Droppers,Droppers,掉落型,掉落型,Droppers
 Dull Blade,Dull Blade,无锋剑,無鋒劍,Dull Blade
 Dumb Enemies,Dumb Enemies,敌人变傻,敵人變傻,Глупые враги
 Dunlins Tooth,Dunlins Tooth,龙牙,龍牙,Dunlins Tooth
-Dupe,Dupe,复制,覆制,Dupe
-Duplicate Profile,,复制配置文件,覆制配置文件,
+Dupe,Dupe,复制,複製,Dupe
+Duplicate Profile,Duplicate Profile,复制配置文件,覆制配置文件,Duplicate Profile
 Dusk Bird,Dusk Bird,暝彩鸟,暝彩鳥,Сумеречная птица
 Dvalin,Dvalin,风魔龙,風魔龍,Двалин
 Dynamic size,Dynamic size,动态大小,動態大小,Dynamic size
@@ -612,8 +614,8 @@ Electroculus,Electroculus,雷神瞳,雷神瞳,Электрокул
 Electrogranum,Electrogranum,雷种子,雷種子,Электрогранум
 Electro Crystal,Electro Crystal,电气水晶,電氣水晶,Electro Crystal
 Elegy for the End,Elegy for the End,终末嗟叹之诗,終末嗟嘆之詩,Elegy for the End
-ElementType,,元素类型,元素類型,тип элемента
-ElementTypes,,元素类型,元素類型,тип элемента
+ElementType,ElementType,元素类型,元素類型,тип элемента
+ElementTypes,ElementTypes,元素类型,元素類型,тип элемента
 Elemental Monument,Elemental Monument,元素方碑,元素方碑,Элементальный монумент
 Elemental Sight,Elemental Sight,元素视野,元素視野,Чувство стихий
 "Elemental sight is kept on even when moving.
@@ -761,9 +763,11 @@ Only items with blue line support this function.","启用检测收集的项目�
 It works only items what will be gathered after enabling this function.
 Only items with blue line support this function."
 "Enables detecting items what are not in interactive map data.
-",,"启用检测不在交互式地图数据中的项目。
+","Enables detecting items what are not in interactive map data.
+","启用检测不在交互式地图数据中的项目。
 只有带绿线的项目支持此功能。","啟用檢測不在互動式地圖數據中的項目。
-只有帶綠線的項目支援此功能。",
+只有帶綠線的項目支援此功能。","Enables detecting items what are not in interactive map data.
+"
 "Enables detecting items what are not in interactive map data.
 Only items with green line support this function.","Enables detecting items what are not in interactive map data.
 Only items with green line support this function.","启用检测不在交互式地图数据中的项目。
@@ -887,16 +891,16 @@ Exclude Katheryne/Tubby/Wagner,Exclude Katheryne/Tubby/Wagner,排除 凯瑟琳/�
 Exp,Exp,冒险阅历,冒險閱歷,Опыт
 Exp bar,Exp bar,冒险阅历经验条,冒險閱歷經驗條,Полоска опыта
 ExpBar,ExpBar,冒险阅历经验条,冒險閱歷經驗條,Полоска опыта
-ExpBarValue,ExpBarValue,,,Значение полоски опыта
+ExpBarValue,ExpBarValue,冒险阅历经验条数值,冒險閱歷經驗條數值,Значение полоски опыта
 Export,Export,导出,導出,Export
 Exquisite,Exquisite,精致,精致,Богатый
 Exquisite Chest,Exquisite Chest,精致的宝箱,精致的寶箱,Богатый сундук
 Exquisite Chest,Exquisite Chest,精致的宝箱,精致的寶箱,Exquisite Chest
-Extreme,Extreme,,,Extreme
+Extreme,Extreme,即死,即死,Extreme
 Eye Of The Storm,Eye Of The Storm,狂风之核,狂風之核,Глаз бури
 Eye of Perception,Eye of Perception,昭心,昭心,Eye of Perception
 Eye of the Storm,Eye of the Storm,狂风之核,狂風之核,Eye of the Storm
-FL,FL,随机,隨機,
+FL,FL,随机,隨機,FL
 FOV Smoothing,FOV Smoothing,FOV平滑度,FOV平滑度,FOV Smoothing
 FOV Speed,FOV Speed,视野速度,視野速度,FOV Speed
 FPS,FPS,帧率,幀率,FPS
@@ -981,8 +985,8 @@ Fox,Fox,狐狸,狐貍,Лиса
 Fragrant Cedar Wood,Fragrant Cedar Wood,垂香木,垂香木,Fragrant Cedar Wood
 Free Camera,Free Camera,自由相机,自由相機,Свободная камера
 Freedom-Sworn,Freedom-Sworn,苍古自由之誓,蒼古自由之誓,Freedom-Sworn
-Freeflight Mode,Freeflight Mode,自由飞行模式(暂),自由飛行模式,Режим свободного полета
-Freeflight mode,Freeflight mode,自由飞行模式(暂),自由飛行模式,Режим свободного полёта
+Freeflight Mode,Freeflight Mode,自由飞行模式,自由飛行模式,Режим свободного полета
+Freeflight mode,Freeflight mode,自由飞行模式,自由飛行模式,Режим свободного полёта
 Freeze Character Animation,Freeze Character Animation,冻结角色动作,凍結角色動作,Остановить Анимации Персонажа
 Freeze Enemies,Freeze Enemies,冻结敌人,凍結敵人,Заморозка Врагов
 Freeze animation,Freeze animation,冻结动画,凍結動畫,Остановка анимации
@@ -1012,8 +1016,6 @@ Geography,Geography,地理,地理,Geography
 Geovishap,Geovishap,岩龙蜥,岩龍蜥,Геовишап
 Geovishap Hatchling,Geovishap Hatchling,幼岩龙蜥,幼岩龍蜥,Детёныш Геовишапа
 GitHub link,GitHub link,GitHub链接,GitHub連結,GitHub link
-Github link,Github link,Github链接,Github連結,Github link
-Glaze Lily,Glaze Lily,琉璃百合,琉璃百合,Глазурная Лилия
 Glaze Medaka,Glaze Medaka,琉璃花鳉,琉璃花鱂,Glaze Medaka
 Glider,Glider,风之翼,風之翼,Планер
 "Glider Texture.
@@ -1278,7 +1280,7 @@ Main developer and updater:,Main developer and updater:,"主要开发者和更�
 Make Character invisible,Make Character invisible,隐藏角色,隱藏角色,Сделать персонажа невидимым
 Makhaira Aquamarine,Makhaira Aquamarine,玛海拉的水色,瑪海拉的水色,Makhaira Aquamarine
 Manipulation,Manipulation,操纵(暂),操縱(暫),Manipulation
-Manual,Manual,,,Гайд
+Manual,Manual,手动,手動,Гайд
 Manual completing,Manual completing,手动完成,手動完成,Manual completing
 Map Teleport,Map Teleport,地图传送,地圖傳送,Map Teleport
 Maple Wood,Maple Wood,枫木,楓木,Maple Wood
@@ -1350,7 +1352,7 @@ Multi-Animation,Multi-Animation,多重动画,多重動畫,Multi-Animation
 Multi-Hit,Multi-Hit,倍攻,倍攻,Multi-Hit
 Multi-Hit Mode,Multi-Hit Mode,倍攻模式,倍攻模式,Multi-Hit Mode
 Multi-Hit Random,Multi-Hit Random,随机倍攻,隨機倍攻,Multi-Hit Random
-Multi-Hit [OnePunch],Multi-Hit [OnePunch],,,Multi-Hit [OnePunch]
+Multi-Hit [OnePunch],Multi-Hit [OnePunch],倍攻 [一拳模式],倍攻 [一拳模式],Multi-Hit [OnePunch]
 Multi-Target,Multi-Target,普攻范围,多目標攻擊,Multi-Target
 Multiplier,Multiplier,倍率,倍率,Множитель
 Mushroom,Mushroom,蘑菇,蘑菇,Гриб
@@ -1381,7 +1383,7 @@ Nobushi,Nobushi,武士,武士,Нобуси
 Noctilucous Jade,Noctilucous Jade,夜泊石,夜泊石,Полуночный нефрит
 Noelle,Noelle,诺艾尔,諾艾爾,Noelle
 None,None,无,無,None
-Normal,Normal,,,Normal
+Normal,Normal,普通,普通,Normal
 Not found.,Not found.,未找到,未找到,Не найдено.
 "Note. This feature is not fully tested detection-wise.
 Not recommended for main accounts or used with high values.","Note. This feature is not fully tested detection-wise.
@@ -1412,7 +1414,7 @@ Old Merc's Pal,Old Merc's Pal,佣兵重剑,傭兵重劍,Old Merc's Pal
 One-Punch Mode,One-Punch Mode,秒杀模式,秒殺模式,One-Punch Mode
 Onikabuto,Onikabuto,鬼兜虫,鬼兜蟲,Оникабуто
 Only Hostile/Aggro,Only Hostile/Aggro,只作用于仇恨在你身上的对象,只作用於仇恨在你身上的對象,Только Агрессивные
-Only bow character.,,仅限弓箭角色,僅限弓箭角色,Только персонажи с луком и стрелами могут использовать
+Only bow character.,Only bow character.,仅限弓箭角色,僅限弓箭角色,Только персонажи с луком и стрелами могут использовать
 Oozing Concretions,Oozing Concretions,淤泥涌口,淤泥湧口,Oozing Concretions
 Open Folder,Open Folder,打开文件夹,打開文件夾,Открыть папку
 Open Team Immediately,Open Team Immediately,立即打开队伍界面,立即打開隊伍界面,Моментальное открытие отряда
@@ -1426,7 +1428,7 @@ Others,Others,其他,其他,Остальные
 Otherworldly Story,Otherworldly Story,异世界行记,異世界行記,Otherworldly Story
 Otogi Wood,Otogi Wood,御伽木,禦伽木,Otogi Wood
 Override Height (m),Override Height (m),指定高度(米),指定高度(米),Перезаписываемая высота (m)
-PF,PF,过滤,過濾,
+PF,PF,过滤,過濾,PF
 Packet,Packet,包,包,Packet
 Packet Sniffer,Packet Sniffer,抓包工具,抓包工具,Packet Sniffer
 Padisarah,Padisarah,帕蒂沙兰,帕蒂沙蘭,Падисара
@@ -1482,7 +1484,7 @@ Prototype Archaic,Prototype Archaic,试作古华,試作古華,Prototype Archaic
 Prototype Crescent,Prototype Crescent,试作澹月,試作澹月,Prototype Crescent
 Prototype Rancour,Prototype Rancour,试作斩岩,試作斬岩,Prototype Rancour
 Prototype Starglitter,Prototype Starglitter,试作星镰,試作星鐮,Prototype Starglitter
-Pseudo: %s,,别名: %s,別名: %s,
+Pseudo: %s,Pseudo: %s,别名: %s,別名: %s,Pseudo: %s
 Pufferfish,Pufferfish,炮鲀,炮魨,Pufferfish
 Purple Shirakodai,Purple Shirakodai,流纹京紫蝶鱼,流紋京紫蝶魚,Purple Shirakodai
 Puzzle,Puzzle,解谜,解謎,Puzzle
@@ -1527,7 +1529,7 @@ to use this, first export the account then add the following arguemnet to a shor
 You can also switch the region with -region ""Region Name""
 Availabe regions are ""usa"", ""eu"", ""asia"", ""thm""."
 Quicksand Unagi,Quicksand Unagi,流沙鳗鳗,流沙鰻鰻,Quicksand Unagi
-RC,RC,,,RC
+RC,RC,RC,RC,RC
 Radiant Spincrystal,Radiant Spincrystal,旋曜玉帛,旋曜玉帛,Лучистый кристалл
 Radish,Radish,白萝卜,白蘿卜,Редис
 Radius (m),Radius (m),范围 (米),範圍 (米),Радиус (m)
@@ -1543,8 +1545,8 @@ Radius to check for valid targets.,Radius to check for valid targets.,有效目�
 Raiden Shogun,Raiden Shogun,雷电将军,雷電將軍,Raiden Shogun
 Raimei Angelfish,Raimei Angelfish,雷鸣仙,雷鳴仙,Raimei Angelfish
 Rainslasher,Rainslasher,雨裁,雨裁,Rainslasher
-Random element type (excluding physics),,使元素类型随机（不会打出物伤）,使元素類型隨機（不會打出物理傷害）,случайный тип элемента（нет физического повреждения）
-RandomElementType,,随机元素类型,隨機元素類型,случайный тип элемента
+Random element type (excluding physics),Random element type (excluding physics),使元素类型随机（不会打出物伤）,使元素類型隨機（不會打出物理傷害）,случайный тип элемента（нет физического повреждения）
+RandomElementType,RandomElementType,随机元素类型,隨機元素類型,случайный тип элемента
 Randomize,Randomize,随机,隨機,Случайный
 Randomize Multiplier,Randomize Multiplier,随机倍攻,隨機倍攻,Случайный множитель
 Randomize multiplier between min and max multiplier.,Randomize multiplier between min and max multiplier.,随机倍攻击，范围在倍攻最小值和最大值之间随机。,隨機倍攻擊，範圍在倍攻最小值和最大值之間隨機。,Варьирующийся множитель между min и max значениями.
@@ -1579,7 +1581,6 @@ Reduce Skill/Burst Cooldown,Reduce Skill/Burst Cooldown,减少 战技/爆发 冷
 1.0: 無冷卻
 1.0以上: 冷卻時間為數值-1。","Уменьшает задержку перед использованием элементального скила и ульты до указанного вами значения.
 1.0 - без КД, 2.0 и выше - увеличивает значение таймера."
-Reduce x{:.1f},Reduce x{:.1f},,,Уменьшить x{:.1f}
 Refresh,Refresh,刷新,刷新,Обновить
 Relay Stone,Relay Stone,聚电石,聚電石,Камень разряда
 Reload,Reload,重新加载,重新加載,Перезагрузить
@@ -1595,7 +1596,7 @@ Removes delay in-between sprints.,Removes delay in-between sprints.,移除多次
 "
 Removes the fog.,Removes the fog.,移除雾气,移除霧氣,Удаляет туман.
 Rename,Rename,重命名,重命名,Rename
-Rename (Pseudo),,重命名 (伪),重命名 (偽),
+Rename (Pseudo),Rename (Pseudo),重命名 (伪),重命名 (偽),Rename (Pseudo)
 Repeat Delay (ms),Repeat Delay (ms),重复间隔 (毫秒),重覆間隔 (毫秒),Повторить задержку (ms)
 Reset Key,Reset Key,重置key(暂),重置key(暫),Сбросить кнопку
 Reset Roll,Reset Roll,重置滚动,重置滾動,Reset Roll
@@ -1657,11 +1658,11 @@ Scarlet Quartz,Scarlet Quartz,深赤之石,深赤之石,Алый кварц
 Scorpion,Scorpion,毒蝎,毒蠍,Скорпион
 Sea Ganoderma,Sea Ganoderma,海灵芝,海靈芝,Морской гриб
 Seagrass,Seagrass,海草,海草,Морская трава
-Seal Location I,,键纹锁 I,,
-Seal Location II,Seal Location II,键纹锁 II,隱藏位置 II,Seal Location II
-Seal Location III,Seal Location III,键纹锁 III,隱藏位置 III,Seal Location III
-Seal Location IV,Seal Location IV,键纹锁 IV,隱藏位置 IV,Seal Location IV
-Seal Location V,,键纹锁 V,,
+Seal Location I,Seal Location I,键纹锁 I,鍵紋 I,Seal Location I
+Seal Location II,Seal Location II,键纹锁 II,鍵紋 II,Seal Location II
+Seal Location III,Seal Location III,键纹锁 III,鍵紋 III,Seal Location III
+Seal Location IV,Seal Location IV,键纹锁 IV,鍵紋 IV,Seal Location IV
+Seal Location V,Seal Location V,键纹锁 V,鍵紋 V,Seal Location V
 Seal Locations,Seal Locations,键纹锁,隱藏位置,Расположение пачатей (энканомия)
 Sealed Chest,Sealed Chest,封印的宝箱,封印的寶箱,Sealed Chest
 Search,Search,搜索,搜索,Поиск
@@ -1686,8 +1687,8 @@ Set Forward Key,Set Forward Key,设置向前按键,設置向前按鍵,Set Forwar
 "Set GameSpeed Multiplier
 Do NOT use this in the Open World, only use in menus/etc, VERY DANGEROUS!","Set GameSpeed Multiplier
 Do NOT use this in the Open World, only use in menus/etc, VERY DANGEROUS!","加速游戏。
-不要在开放世界中使用，只能在菜单/等中使用，风险极高!”","加速遊戲。
-不要在開放世界中使用，只能在菜單/等中使用，風險極高!”","Установить множитель скорости игры
+不要在开放世界中使用，只能在菜单/等中使用，风险极高!","加速遊戲。
+不要在開放世界中使用，只能在菜單/等中使用，風險極高!","Установить множитель скорости игры
 НЕ ИСПОЛЬЗУЙТЕ В ОТКРЫТОМ МИРЕ, только в меню/etc, ОЧЕНЬ ОПАСНО!"
 Set Left Key,Set Left Key,设置向左按键,設置向左按鍵,Установить левую кнопку
 Set Right Key,Set Right Key,设置向右按键,設置向右按鍵,Установить правую кнопку
@@ -1827,7 +1828,7 @@ Sweet-Flower Medaka,Sweet-Flower Medaka,甜甜花鳉,甜甜花鱂,Sweet-Flower M
 Sweet Flower,Sweet Flower,甜甜花,甜甜花,Sweet Flower
 Sword Hilt,Sword Hilt,剑柄,劍柄,Рукоять меча
 Swords,Swords,剑,劍,Swords
-Sync to server,,同步到服务器,同步到伺服器,
+Sync to server,Sync to server,同步到服务器,同步到伺服器,Sync to server
 Tartaglia,Tartaglia,达达利亚,達達利亞,Тарталья
 Tea-Colored Shirakodai,Tea-Colored Shirakodai,流纹茶碟鱼,流紋茶碟魚,Tea-Colored Shirakodai
 Teleport,Teleport,传送,傳送,Телепорт
@@ -1844,9 +1845,9 @@ Teleport to Nearest,Teleport to Nearest,就近传送,就近傳送,Телепор
  Press the V key to track the Quest, then press the hotkey to teleport."
 Teleports,Teleports,传送,傳送,Телепорты
 Temari,Temari,手鞠,手鞠,Тэмари
-Texture Changer,Texture Changer,,,Замена Текстур
+Texture Changer,Texture Changer,纹理修改器,材質修改器,Замена Текстур
 Texture Changer.,Texture Changer.,纹理修改器,材質修改器,Замена Текстур.
-Texture changer,Texture changer,纹理修改器,材質修改器,Замена текстур
+Texture changer,Texture changer,纹理修改器,材質修改器,Замена Текстур
 The Alley Flash,The Alley Flash,暗巷闪光,暗巷閃光,The Alley Flash
 The Bell,The Bell,钟剑,鐘劍,The Bell
 The Black Sword,The Black Sword,黑剑,黑劍,The Black Sword
@@ -1918,7 +1919,7 @@ and is not recommended for Laggy Internet connections.","游戏时间加速倍�
 Большие значения могут привести к проблеме синхронизации с сервером
 Не рекомендуется с использованием слабого интернета."
 Time Trial Challenge,Time Trial Challenge,限时挑战,限時挑戰,Испытание на время
-Time Trial Challenge Collection,Time Trial Challenge Collection,限时收集挑战(?),限時收集挑戰,Коллекция испытаний на время
+Time Trial Challenge Collection,Time Trial Challenge Collection,限时收集挑战,限時收集挑戰,Коллекция испытаний на время
 TimeHour,TimeHour,时,時,Время (час)
 TimeMinute,TimeMinute,分,分,Время (минуты)
 "To display paimon, turn on the function, open the profile (esc) and close it. 
@@ -1929,12 +1930,12 @@ If the paimon disappeared after teleportation, do not disable the function, open
 Если паймон пропадает после телепортации, не выключате функцию, затем откройте и закройте профиль."
 Toggle Damage Overlay,Toggle Damage Overlay,切换伤害叠加,切換傷害疊加,Включить оверлей урона
 Toggle Hotkey,Toggle Hotkey,切换快捷键,切換快捷鍵,Включить комбинацию клавиш
-Toggle icons to HD format.,Toggle icons to HD format.,将图标切换为高清格式.,將圖標切換為高清格式.,Toggle icons to HD format.
+Toggle icons to HD format.,Toggle icons to HD format.,将图标切换为高清格式,將圖標切換為高清格式,Toggle icons to HD format.
 Torch Puzzle,Torch Puzzle,火炬解谜,火炬解謎,Загадка с факелами
 Tracer Color,Tracer Color,追踪颜色,追蹤顏色,Цвет стрелки
 Tracer Mode,Tracer Mode,追踪模式,追蹤模式,Направляющий режим
 Translators list:,Translators list:,"译者名单: ","譯者名單: ",Translators list:
-Transparency of filled part.,Transparency of filled part.,填充部分的透明度.,填充部分的透明度.,Прозрачность заполненной части.
+Transparency of filled part.,Transparency of filled part.,填充部分的透明度,填充部分的透明度,Прозрачность заполненной части.
 Trap,Trap,陷阱,陷阱,Ловушка
 Traveler,Traveler,旅行者,旅行者,Traveler
 Traveler's Handy Sword,Traveler's Handy Sword,旅行剑,旅行劍,Traveler's Handy Sword
@@ -1943,7 +1944,7 @@ Tree Farm,Tree Farm,自动砍树,自動砍樹,Автофарм дерева
 Tree of Dreams,Tree of Dreams,梦之树,夢之樹,Tree of Dreams
 Tri Yana Seeds,Tri Yana Seeds,三相众物,三相眾物,Семена трияны
 Tri-Yana Seeds,Tri-Yana Seeds,三乘种子,三乘種子,Tri-Yana Seeds
-Triangular Mechanism,Triangular Mechanism,三角的机关,三角機構(暫),Треугольный механизм (энканомия)
+Triangular Mechanism,Triangular Mechanism,三角的机关,三角的機關,Треугольный механизм (энканомия)
 True Fruit Angler,True Fruit Angler,真果角鲀,真果角魨,True Fruit Angler
 Twin Nephrite,Twin Nephrite,甲级宝珏,甲級寶玨,Twin Nephrite
 Type Filters,Type Filters,过滤类型,過濾類型,Фильтр типов
@@ -1994,7 +1995,7 @@ Wavebreaker's Fin,Wavebreaker's Fin,断浪长鳍,斷浪長鰭,Wavebreaker's Fin
 Waverider Waypoint (Cannot Teleport),Waverider Waypoint (Cannot Teleport),浪船锚点 (不能传送),浪船錨點 (不能傳送),Waverider Waypoint (Cannot Teleport)
 Waypoints,Waypoints,锚点,錨點,Waypoints
 Weapon,Weapon,武器,武器,Weapon
-Weapon Filters,,武器过滤器,武器過濾器,
+Weapon Filters,Weapon Filters,武器过滤器,武器過濾器,Weapon Filters
 Weasel,Weasel,盗宝鼬,盜寶鼬,Вор-хорёк
 Weather type,Weather type,天气种类,天氣種類,Погода
 When entity was gathered finding nearest point in this range.,When entity was gathered finding nearest point in this range.,当对象生成时在这个范围寻找最近的点,當對象生成時在這個範圍尋找最近的點,When entity was gathered finding nearest point in this range.
@@ -2023,7 +2024,7 @@ Wood,Wood,树,樹,Wood
 Wooden Crate,Wooden Crate,木箱子,木箱子,Деревянный ящик
 World,World,世界,世界,Мир
 World Quests,World Quests,世界任务,世界任務,World Quests
-World and Trounce boss enemies.,World and Trounce boss enemies.,世界boss和周本boss.,世界boss和周本boss.,Мировые боссы и боссы для возвышения
+World and Trounce boss enemies.,World and Trounce boss enemies.,世界boss和周本boss,世界boss和周本boss,Мировые боссы и боссы для возвышения
 World level,World level,世界等级,世界等級,Уровень мира
 Xiangling,Xiangling,香菱,香菱,Xiangling
 Xiao,Xiao,魈,魈,Xiao
@@ -2042,3 +2043,5 @@ Zoom Speed,Zoom Speed,切换速度,變焦速度,Скорость приближ�
 command line arguments,command line arguments,命令行参数,命令行參數,Аргументы командной строки
 list,list,列表,列表,список
 not found,not found,未找到,未找到,не найдено
+|Fixed,|Fixed,固定,固定,|Fixed
+|Rate({}),|Rate({}),|百分比({}),|百分比({}),|Rate({})
