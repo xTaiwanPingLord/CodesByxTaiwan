@@ -1,82 +1,62 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void InputVector(vector<vector<int>> &small, vector<vector<int>> &big, int &area)
+{
+    for (auto &i : small)
+    {
+        for (auto &j : i)
+        {
+            cin >> j;
+        }
+    }
+    for (auto &i : big)
+    {
+        for (auto &j : i)
+        {
+            cin >> j;
+            area += j;
+        }
+    }
+}
+
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    int people, num_eliminate, loop;
-    uint64_t a, b, c, d;
-    cin >> people >> num_eliminate;
-    vector<uint64_t> S(people, 0), T(people, 0);
-    vector<int> idx(people, 0), eliminate(people, 0);
+    int r1, c1, r2, c2, A = 0, max_delta, min_delta = 100000, delta = 0, sum_delta = 0, num_delta = 0, num_submatrix = 0;
+    cin >> r1 >> c1 >> r2 >> c2 >> max_delta;
+    vector<vector<int>> small(r1, vector<int>(c1, 0)), big(r2, vector<int>(c2, 0));
 
-    for (uint64_t &i : S)
-    {
-        cin >> i;
-    }
-    for (uint64_t &i : T)
-    {
-        cin >> i;
-    }
-    for (int &i : idx)
-    {
-        cin >> i;
-        i--;
-    }
+    InputVector(small, big, A);
 
-    while (idx.size() != 1)
+    for (int i = 0; i < int(big.size() - small.size() + 1); i++)
     {
-        // loop = (uint64_t)idx.size();
-        loop = (uint64_t)idx.size() / 2;
-        for (int i = 0; i < loop; i++)
+        for (int j = 0; j < int(big[i].size() - small[0].size() + 1); j++)
         {
-            // cout << loop;
-            a = S[idx[i]];
-            b = T[idx[i]];
-            c = S[idx[i + 1]];
-            d = T[idx[i + 1]];
-
-            if (a*b >= c*d)
+            sum_delta = 0;
+            num_delta = 0;
+            for (int m = 0; m < int(small.size()); m++)
             {
-                S[idx[i]] = a + (c * d) / (2 * b);
-                T[idx[i]] = b + (c * d) / (2 * a);
-                S[idx[i + 1]] = c + c / 2;
-                T[idx[i + 1]] = d + d / 2;
-                eliminate[idx[i + 1]]++;
-                if (eliminate[idx[i + 1]] < num_eliminate)
+                for (int n = 0; n < int(small[m].size()); n++)
                 {
-                    // cout << " case1 " << endl;
-                    idx.push_back(idx[i + 1]);
-                    idx.erase(idx.begin() + i + 1);
-                }
-                else
-                {
-                    // cout << " case2 " << endl;
-                    idx.erase(idx.begin() + i + 1);
+                    delta = big[i + m][j + n] - small[m][n];
+                    if (delta != 0)
+                    {
+                        num_delta++;
+                        sum_delta += delta;
+                    }
                 }
             }
-            else
+            if (num_delta <= max_delta)
             {
-                S[idx[i]] = a + a / 2;
-                T[idx[i]] = b + b / 2;
-                S[idx[i + 1]] = c + (a * b) / (2 * d);
-                T[idx[i + 1]] = d + (a * b) / (2 * c);
-                eliminate[idx[i]]++;
-                if (eliminate[idx[i]] < num_eliminate)
-                {
-                    // cout << " case3 " << endl;
-                    idx.push_back(idx[i]);
-                    idx.erase(idx.begin() + i);
-                }
-                else
-                {
-                    // cout << " case4 " << endl;
-                    idx.erase(idx.begin() + i);
-                }
+                num_submatrix++;
+                min_delta = min(min_delta, abs(sum_delta));
             }
         }
     }
-    cout << idx[0] + 1;
+
+    cout << num_submatrix << endl;
+    cout << (num_submatrix == 0 ? -1 : min_delta);
 }

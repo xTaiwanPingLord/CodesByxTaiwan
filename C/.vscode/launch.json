@@ -23,10 +23,6 @@
                     "ignoreFailures": true
                 },
                 {
-                    "description": "Fix pretty-printing for gdb",
-                    "text": "-exec set charset UTF-8"
-                },
-                {
                     "description":  "將反組譯碼變體設為 Intel",
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
