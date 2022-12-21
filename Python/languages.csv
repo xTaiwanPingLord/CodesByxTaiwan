@@ -1,6 +1,6 @@
 ,English,SimplifiedChinese,TraditionalChinese,Russian
-"  Chinese:","  Chinese:","  中文:","  中文:","  Упрощенный китайский:"
-"  Russian:","  Russian:","  俄文:","  俄文:","  Русский:"
+  Chinese:,  Chinese:,  中文:,  中文:,  Упрощенный китайский:
+  Russian:,  Russian:,  俄文:,  俄文:,  Русский:
 """The Catch""","""The Catch""",「渔获」,「漁獲」,"""The Catch"""
 "%s; Position: %s; Scene: %u
 ","%s; Position: %s; Scene: %u
@@ -17,6 +17,7 @@ Abiding Angelfish,Abiding Angelfish,长生仙,長生仙,Abiding Angelfish
 Ability Log [DEBUG],Ability Log [DEBUG],技能日志[调试],技能日誌[偵錯],Логи способностей [DEBUG]
 Ability Reduce,Ability Reduce,属性降低(暂),屬性降低(暫),Уменьшеньшение способности
 About,About,关于,關於,About
+Abyss Herald,Abyss Herald,深渊使徒,深淵使徒,Вестник Бездны
 Abyss Mage,Abyss Mage,深渊法师,深淵法師,Маг бездны
 Abyss mage/churl/slime shields.,Abyss mage/churl/slime shields.,深渊法师/深渊使徒/史莱姆 的护盾,深淵法師/深淵使徒/史萊姆 的護盾,Маг/чурл/слайм бездны щиты.
 Account,Account,账号,帳號,Account
@@ -53,8 +54,8 @@ Aizen Medaka,Aizen Medaka,蓝染花鳉,藍染花鱂,Aizen Medaka
 Ajilenakh Nut,Ajilenakh Nut,枣椰,棗椰,Орехи аджиленах
 Akai Maou,Akai Maou,赤魔王,赤魔王,Akai Maou
 Akebi GC,Akebi GC,Akebi GC,Akebi GC,Akebi GC
-Akebi discord:,Akebi discord:,"Akebi discord: ","Akebi discord: ",Akebi discord:
-Akebi github:,Akebi github:,"Akebi github: ","Akebi github: ",Akebi github:
+Akebi discord:,Akebi discord:,Akebi discord: ,Akebi discord: ,Akebi discord:
+Akebi github:,Akebi github:,Akebi github: ,Akebi github: ,Akebi github:
 Akuoumaru,Akuoumaru,恶王丸,惡王丸,Akuoumaru
 Albedo,Albedo,阿贝多,阿貝多,Albedo
 Algorithm Of Semi Intransient Matrix Of Overseer Network,Algorithm Of Semi Intransient Matrix Of Overseer Network,半永恒统辖矩阵,半永恒統轄矩陣,Алгоритм полуизвечной матрицы оператора наблюдения
@@ -227,6 +228,8 @@ Bamboo Segment,Bamboo Segment,竹节,竹節,Bamboo Segment
 Bamboo Shoot,Bamboo Shoot,竹笋,竹筍,Bamboo Shoot
 Barbara,Barbara,芭芭拉,芭芭拉,Barbara
 "Barrels, boxes, vases, etc.","Barrels, boxes, vases, etc.",桶、箱、花瓶等。,桶、箱、花瓶等。,"Бочки, ящики, вазы и т.д."
+Bathysmal Vishap,Bathysmal Vishap,深海龙蜥,深海龍蜥,Вишап глубин
+Bathysmal Vishap Herd,Bathysmal Vishap Herd,深海龙蜥之群,深海龍蜥之群,Вишап глубин
 Beginner's Protector,Beginner's Protector,新手长枪,新手長槍,Beginner's Protector
 Beidou,Beidou,北斗,北鬥,Beidou
 Bennett,Bennett,班尼特,班尼特,Bennett
@@ -250,6 +253,7 @@ Blocks the WindSeed Packet which can cause RCE from malicious private servers. O
 Bloodtainted Greatsword,Bloodtainted Greatsword,沐浴龙血的剑,沐浴龍血的劍,Bloodtainted Greatsword
 Blue Frog,Blue Frog,蓝蛙,藍蛙,Blue Frog
 Blue Horned Lizard,Blue Horned Lizard,蓝角蜥,藍角蜥,Blue Horned Lizard
+Bluethunder Weasel,Bluethunder Weasel,青雷鼬,青雷鼬,Хорёк синей молнии
 Boar,Boar,野猪,野豬,Boar
 Body,Body,身体,身體,Body
 "Body Texture.
@@ -429,9 +433,9 @@ Set to 0 for unlimited attacks (even empty trees, extremely high risk).
 Note: Memorized trees' attacks are reset after game restart."
 Crab,Crab,螃蟹,螃蟹,Краб
 Crane,Crane,蓝翎鹭,藍翎鷺,Crane
-Crash,Crash,坠落,坠落,Crash
+Crash,Crash,坠落,墜落,Crash
 Crash Attack Delay (ms),Crash Attack Delay (ms),伤害间隔延迟(毫秒),傷害間隔延遲(毫秒),Crash Attack Delay (ms)
-Crash Damage Mode,Crash Damage Mode,坠落伤害模式,坠落傷害模式,Crash Damage Mode
+Crash Damage Mode,Crash Damage Mode,坠落伤害模式,墜落傷害模式,Crash Damage Mode
 Crash Repeat Delay (ms),Crash Repeat Delay (ms),伤害循环延迟(毫秒),傷害循環延遲(毫秒),Crash Repeat Delay (ms)
 Crash damage value,Crash damage value,坠落伤害数值,墜落傷害數值,Crash damage value
 Crash damage with percent value.,Crash damage with percent value.,坠落伤害将造成百分比伤害,墜落傷害將造成百分比傷害,Crash damage with percent value.
@@ -484,6 +488,7 @@ Debate Club,Debate Club,以理服人,以理服人,Debate Club
 Debug,Debug,调试,調試,Откладка
 Debug Animations,Debug Animations,调试动画,調試動畫,Анимации отладки
 Decrease FOV,Decrease FOV,减少FOV,減少FOV,Уменьшить поле зрения
+Deep Sea Unagi,Deep Sea Unagi,深海鳗鳗,深海鰻鰻,Глубоководный угорь
 Del,Del,删除,刪除,Del
 Delay,Delay,延迟,延遲,Задержка
 Delay (in ms) between loot vacuum.,Delay (in ms) between loot vacuum.,每一次吸附的延迟(单位: 毫秒).,每一次吸附的延遲(單位: 毫秒).,Задержка (в ms) между притягиванием вещей.
@@ -583,6 +588,7 @@ Values under 1.5 may be too intruding.","玩家与物品间的距离。
 範圍低於1.5m也許會有所影響。","Дистанция между пероснажем и предметом.
 Значения ниже 1.5 может быть слишком навязчивым."
 Distance between the player and the monster.,Distance between the player and the monster.,怪物与玩家间的距离,怪物與玩家間的距離,Дистанция между персонажем и монстром.
+Divda Ray,Divda Ray,迪芙妲鳐,迪芙妲鰩,Дивдинский скат
 "Do fix positions to nearest to point.
 Only items with green line support this function.","Do fix positions to nearest to point.
 Only items with green line support this function.","将位置固定到离点最近的位置。
@@ -1009,9 +1015,10 @@ Font Size,Font Size,字体大小,字體大小,Размер шрифта
 Font outline,Font outline,字体描边大小,字體描邊大小,Шрифт линии
 Font size of name or distance.,Font size of name or distance.,名称或距离的字体大小,名稱或距離的字體大小,Размер шрифта имени/дистанции.
 Forest Regalia,Forest Regalia,森林王器,森林王器,Forest Regalia
+Formalo Ray,Formalo Ray,佛玛洛鳐,佛瑪洛鰩,Фумарольный скат
 Forward,Forward,前,前,Forward
 Forward HotKey,Forward HotKey,向前热键,向前熱鍵,Forward HotKey
-Founder:,Founder:,"创始人: ","創始人: ",Основатель:
+Founder:,Founder:,创始人: ,創始人: ,Основатель:
 FountainRain,FountainRain,喷泉雨,喷泉雨,FountainRain
 Fov Changer,Fov Changer,视场修改,視場修改,FOV
 Fowl,Fowl,禽肉,禽肉,Fowl
@@ -1193,7 +1200,7 @@ Instant Death Mode,Instant Death Mode,即死模式,即死模式,Режим мо�
 Instant Vacuum,Instant Vacuum,瞬间吸附,瞬間吸附,Моментальный вакуум
 Instant death mode,Instant death mode,即死模式,即死模式,Режим моментального убийства
 Instantly destroys non-living objects within range.,Instantly destroys non-living objects within range.,自动摧毁范围内的 非生物 物体,自動摧毀範圍內的 非生物 物體,Моментально разрушает не живые объекты на определённом расстоянии.
-Interaction Rewards,Interaction Rewards,交互奖励,交互奖励,Interaction Rewards
+Interaction Rewards,Interaction Rewards,交互奖励,互動獎勵,Interaction Rewards
 Interactive map,Interactive map,交互式地图,互動式地圖,Интерактивная карта
 Interface Customization,Interface Customization,定制界面,定制界面,Interface Customization
 Interpolate,Interpolate,插值,插值,Interpolate
@@ -1234,9 +1241,11 @@ Keep game time the same,Keep game time the same,保持游戏时间在一个固�
 Keqing,Keqing,刻晴,刻晴,Keqing
 Key,Key,钥匙,鑰匙,Key
 Key Sigil,Key Sigil,键纹,鍵紋,Знак-ключ
-Key Sigil II,Key Sigil II,键纹 II,鍵紋 II,Key Sigil II
-Key Sigil III,Key Sigil III,键纹 III,鍵紋 III,Key Sigil III
-Key Sigil IV,Key Sigil IV,键纹 IV,鍵紋 IV,Key Sigil IV
+Key Sigil I,Key Sigil I,键纹 I,鍵紋 I,Знак-ключ I
+Key Sigil II,Key Sigil II,键纹 II,鍵紋 II,Знак-ключ II
+Key Sigil III,Key Sigil III,键纹 III,鍵紋 III,Знак-ключ III
+Key Sigil IV,Key Sigil IV,键纹 IV,鍵紋 IV,Знак-ключ IV
+Key Sigil V,Key Sigil V,键纹 I,鍵紋 V,Знак-ключ ?
 Key of Khaj-Nisut,Key of Khaj-Nisut,圣显之钥,聖顯之鑰,Key of Khaj-Nisut
 Key to exit the game.,Key to exit the game.,退出游戏的按键,退出遊戲的按鍵,Кнопка для моментального выхода из игры.
 Key to hold down before clicking on target location.,Key to hold down before clicking on target location.,传送前需要按住的键位,傳送前需要按住的鍵位,Key to hold down before clicking on target location.
@@ -1311,6 +1320,7 @@ Lotus Head,Lotus Head,莲蓬,蓮蓬,Голова Лотуса
 Lower = Smoother,Lower = Smoother,越低越平滑,越低越平滑,Меньше = Плавнее
 Lucklight Fly,Lucklight Fly,吉光虫,吉光蟲,Lucklight Fly
 Lumen Cage,Lumen Cage,流明原石(?),流明原石(?),Lumen Cage
+Lumenlamp,Lumenlamp,明石灯,明石燈,Светоносная лампа
 Lumenspar,Lumenspar,流明晶石,流明晶石,Светоносный кристалл
 Luminescent Spine,Luminescent Spine,发光髓,發光髓,Светящееся Брюшко
 Luminous Seelie,Luminous Seelie,流明仙灵,流明仙靈,Светящаяся фея
@@ -1323,8 +1333,8 @@ Magic Guide,Magic Guide,魔导绪论,魔導緒論,Magic Guide
 Magical Crystal Chunk,Magical Crystal Chunk,魔晶块,魔晶塊,Магическая кристалльная руда
 Magical Crystal Chunk Drop,Magical Crystal Chunk Drop,魔晶块掉落,魔晶塊掉落,Magical Crystal Chunk Drop
 Maguu Kenki,Maguu Kenki,魔偶剑鬼,魔偶劍鬼,Магу кэнки
-Main contributors:,Main contributors:,"主要贡献者: ","主要貢獻者: ",Основные авторы:
-Main developer and updater:,Main developer and updater:,"主要开发者和更新者: ","主要開發者和更新者: ",Главный разработчик и апдейтер:
+Main contributors:,Main contributors:,主要贡献者: ,主要貢獻者: ,Основные авторы:
+Main developer and updater:,Main developer and updater:,主要开发者和更新者: ,主要開發者和更新者: ,Главный разработчик и апдейтер:
 Make Character invisible,Make Character invisible,隐藏角色,隱藏角色,Сделать персонажа невидимым
 Makhaira Aquamarine,Makhaira Aquamarine,玛海拉的水色,瑪海拉的水色,Makhaira Aquamarine
 Manipulation,Manipulation,操纵(暂),操縱(暫),Manipulation
@@ -1505,6 +1515,7 @@ Pinecone,Pinecone,松果,松果,Сосновая шишка
 Pipe name,Pipe name,管道名,管道名,Имя канала
 Pipe name for connecting. Changes will apply after next game launch.,Pipe name for connecting. Changes will apply after next game launch.,用于连接的管道名称。更改将在下次游戏启动时生效。,用於連接的管道名稱。更改將在下次遊戲啟動時生效。,Имя канала для подключения. Изменения вступят в силу после перезапуска игры
 Pirate Helm,Pirate Helm,海盗船指针(清籁丸),海盜船指針(清籟丸),Пиратский Шлем
+Places of Essence Worship,Places of Essence Worship,精华受拜处,精華受拜處,Places of Essence Worship
 Placesof Essence Worship,Placesof Essence Worship,精华拜受处,精華拜受處,Места поклонения
 Plant,Plant,植物,植物,Растение
 Plants,Plants,植物,植物,Растения
@@ -1548,7 +1559,7 @@ Pyro,Pyro,火,火,Pyro
 Pyro Abyss Lector,Pyro Abyss Lector,深渊咏者·渊火,深淵詠者·淵火,Пиро вестник бездны
 Pyro Hypostasis,Pyro Hypostasis,无相之火,無相之火,Пиро гипостазис
 Pyro Regisvine,Pyro Regisvine,爆炎树,爆炎樹,Пиро орхидея
-Qingxin,Qingxin,清心,清心,"Цветок цинсинь "
+Qingxin,Qingxin,清心,清心,Цветок цинсинь 
 Qiqi,Qiqi,七七,七七,Qiqi
 Quality,Quality,质量,品質,Качество
 Quest Interact,Quest Interact,任务交互,任務互動,Quest Interact
@@ -1720,12 +1731,13 @@ Scarlet Quartz Drop,Scarlet Quartz Drop,深赤之石掉落,深赤之石掉落,Sc
 Scorpion,Scorpion,毒蝎,毒蠍,Скорпион
 Sea Ganoderma,Sea Ganoderma,海灵芝,海靈芝,Морской гриб
 Seagrass,Seagrass,海草,海草,Морская трава
-Seal Location I,Seal Location I,键纹锁 I,鍵紋 I,Seal Location I
-Seal Location II,Seal Location II,键纹锁 II,鍵紋 II,Seal Location II
-Seal Location III,Seal Location III,键纹锁 III,鍵紋 III,Seal Location III
-Seal Location IV,Seal Location IV,键纹锁 IV,鍵紋 IV,Seal Location IV
-Seal Location V,Seal Location V,键纹锁 V,鍵紋 V,Seal Location V
-Seal Locations,Seal Locations,键纹锁,隱藏位置,Расположение пачатей (энканомия)
+Seal Location ?,Seal Location ?,键纹解锁点 ?,鍵紋解鎖點 ?,Seal Location ?
+Seal Location I,Seal Location I,键纹锁 I,鍵紋鎖 I,Seal Location I
+Seal Location II,Seal Location II,键纹锁 II,鍵紋鎖 II,Seal Location II
+Seal Location III,Seal Location III,键纹锁 III,鍵紋鎖 III,Seal Location III
+Seal Location IV,Seal Location IV,键纹锁 IV,鍵紋鎖 IV,Seal Location IV
+Seal Location V,Seal Location V,键纹锁 V,鍵紋鎖 V,Seal Location V
+Seal Locations,Seal Locations,键纹锁,鍵紋鎖,Расположение пачатей (энканомия)
 Sealed Chest,Sealed Chest,封印的宝箱,封印的寶箱,Sealed Chest
 Search,Search,搜索,搜索,Поиск
 Search Filters,Search Filters,搜索物品,搜索過濾器,Поисковые фильтры
@@ -1757,7 +1769,7 @@ Set Left Key,Set Left Key,设置向左按键,設置向左按鍵,Установи
 Set Right Key,Set Right Key,设置向右按键,設置向右按鍵,Установить правую кнопку
 Set UID position X,Set UID position X,设置UID X坐标,設置UID X坐標,Установить UID по оси X
 Set UID position y,Set UID position y,设置UID Y坐标,設置UID Y坐標,Установить UID по оси y
-Set UID size,Set UID size,设置UID字体大小,設置UID字體大小,"Установить размер UID "
+Set UID size,Set UID size,设置UID字体大小,設置UID字體大小,Установить размер UID 
 Set a field of view value.,Set a field of view value.,设置视场大小值,視場大小值,установить значение поля зрения
 Set a fixed additional zoom value to the camera.,Set a fixed additional zoom value to the camera.,给相机设置一个固定的附加视距值,給相機設置一個固定的附加變焦值,Установить фиксированное zoom значение для камеры.
 Set accounts' name showing type.,Set accounts' name showing type.,设置账号名显示类型,設置帳號名顯示類型,Set accounts' name showing type.
@@ -1839,6 +1851,7 @@ Slime,Slime,史莱姆,史萊姆,Слайм
 Slingshot,Slingshot,弹弓,彈弓,Slingshot
 Small Lamp Grass,Small Lamp Grass,小灯草,小燈草,Маленькая Светящаяся трава
 Small Rock Pile,Small Rock Pile,小石碓,小石碓,Маленькая каменная насыпь
+Smashed Stone,Smashed Stone,碎石堆,碎石堆,Smashed Stone
 Snapdragon,Snapdragon,金鱼草,金魚草,Львиный зев
 Snow Finch,Snow Finch,雪团雀,雪團雀,Snow Finch
 Snow Fox,Snow Fox,雪狐,雪狐,Snow Fox
@@ -1922,6 +1935,7 @@ Texture Changer.,Texture Changer.,纹理修改器,材質修改器,Замена �
 Texture changer,Texture changer,纹理修改器,材質修改器,Замена Текстур
 The Alley Flash,The Alley Flash,暗巷闪光,暗巷閃光,The Alley Flash
 The Bell,The Bell,钟剑,鐘劍,The Bell
+The Black Serpents,The Black Serpents,黯色空壳,黯色空殼,The Black Serpents
 The Black Sword,The Black Sword,黑剑,黑劍,The Black Sword
 The Crux: The Alcor,The Crux: The Alcor,南十字•死兆星,南十字•死兆星,The Crux: The Alcor
 The Eremites,The Eremites,镀金旅团,鍍金旅團,The Eremites
@@ -2006,7 +2020,7 @@ Toggle icons to HD format.,Toggle icons to HD format.,将图标切换为高清�
 Torch Puzzle,Torch Puzzle,火炬解谜,火炬解謎,Загадка с факелами
 Tracer Color,Tracer Color,追踪颜色,追蹤顏色,Цвет стрелки
 Tracer Mode,Tracer Mode,追踪模式,追蹤模式,Направляющий режим
-Translators list:,Translators list:,"译者名单: ","譯者名單: ",Translators list:
+Translators list:,Translators list:,译者名单: ,譯者名單: ,Translators list:
 Transparency of filled part.,Transparency of filled part.,填充部分的透明度,填充部分的透明度,Прозрачность заполненной части.
 Trap,Trap,陷阱,陷阱,Ловушка
 Traveler,Traveler,旅行者,旅行者,Traveler
@@ -2123,6 +2137,7 @@ Yun Jin,Yun Jin,云堇,雲堇,Yun Jin
 Zaytun Peach,Zaytun Peach,墩墩桃,墩墩桃,Персик зайтун
 Zhongli,Zhongli,钟离,鐘離,Zhongli
 Zoom Speed,Zoom Speed,切换速度,變焦速度,Скорость приближения
+"\""Day-Night\"" Switching Mechanism","\""Day-Night\"" Switching Mechanism",日夜切换机关,日夜切換機關,"\""Day-Night\"" Switching Mechanism"
 command line arguments,command line arguments,命令行参数,命令行參數,Аргументы командной строки
 list,list,列表,列表,список
 not found,not found,未找到,未找到,не найдено

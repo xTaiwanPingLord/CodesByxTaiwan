@@ -373,8 +373,8 @@ Color of box font.,Color of box font.,边框颜色,邊框顏色,Color of box fon
 Color of line font.,Color of line font.,线条颜色,線條顏色,Color of line font.
 "Color of line, name, or distance text font.","Color of line, name, or distance text font.",线条、名字或距离文本的颜色。,線條、名字或距離文本的顏色。,"Color of line, name, or distance text font."
 Color of rectangle font.,Color of rectangle font.,长方形颜色,長方形顏色,Color of rectangle font.
-Color of the arrow outline.,Color of the arrow outline..,箭头轮廓的颜色.,Color of the arrow outline..,Color of the arrow outline..
-Color of the circle icon fill.,Color of the circle icon fill.,圆圈图标填充颜色,Color of the circle icon fill.,Color of the circle icon fill.
+Color of the arrow outline.,Color of the arrow outline..,箭头轮廓的颜色,箭頭輪廓的顏色,Color of the arrow outline..
+Color of the circle icon fill.,Color of the circle icon fill.,圆圈图标填充颜色,圓圈圖標填充顏色,Color of the circle icon fill.
 Commands,Commands,命令,命令,Команды
 Common,Common,普通,普通,Обычный
 Common Chest,Common Chest,普通的宝箱,普通的寶箱,Обычный сундук
@@ -429,9 +429,9 @@ Set to 0 for unlimited attacks (even empty trees, extremely high risk).
 Note: Memorized trees' attacks are reset after game restart."
 Crab,Crab,螃蟹,螃蟹,Краб
 Crane,Crane,蓝翎鹭,藍翎鷺,Crane
-Crash,Crash,坠落,坠落,Crash
+Crash,Crash,坠落,墜落,Crash
 Crash Attack Delay (ms),Crash Attack Delay (ms),伤害间隔延迟(毫秒),傷害間隔延遲(毫秒),Crash Attack Delay (ms)
-Crash Damage Mode,Crash Damage Mode,坠落伤害模式,坠落傷害模式,Crash Damage Mode
+Crash Damage Mode,Crash Damage Mode,坠落伤害模式,墜落傷害模式,Crash Damage Mode
 Crash Repeat Delay (ms),Crash Repeat Delay (ms),伤害循环延迟(毫秒),傷害循環延遲(毫秒),Crash Repeat Delay (ms)
 Crash damage value,Crash damage value,坠落伤害数值,墜落傷害數值,Crash damage value
 Crash damage with percent value.,Crash damage with percent value.,坠落伤害将造成百分比伤害,墜落傷害將造成百分比傷害,Crash damage with percent value.
@@ -458,8 +458,10 @@ Cuihua Wood,Cuihua Wood,萃华木,萃華木,Cuihua Wood
 CurExp,CurExp,当前经验值,當前經驗值,Текущий опыт
 Custom Element,Custom Element,自定义元素,自定義元素,пользовательский элемент
 Custom Pickup Range,Custom Pickup Range,范围拾取,範圍拾取,Дальность подбора
+Custom Private Key,Custom Private Key,自订 私人金钥,自訂 私人金鑰,Custom Private Key
 Custom Profile,Custom Profile,自定义资料卡,自定義配置,Custom Profile
 Custom Profile.,Custom Profile.,自定义资料卡,自定義配置,Custom Profile.
+Custom Public Key,Custom Public Key,自订 公开金钥,自訂 公開金鑰,Custom Public Key
 Custom Teleport,Custom Teleport,自定义传送,自定義傳送,Custom Teleport
 Custom Teleports,Custom Teleports,自定义传送,自定義傳送,Custom Teleports
 Custom Weather,Custom Weather,自定义天气,自定義天氣,Custom Weather
@@ -666,6 +668,7 @@ Enable,Enable,启动,啟動,Включить
 Enable Interpolation,Enable Interpolation,使用插值模式,使用插值模式,Включить Interpolation
 Enable Kill Aura,Enable Kill Aura,启动 杀戮光环,啟動 殺戮光環,Включить Kill Aura
 Enable Peeking,Enable Peeking,反虚化,反虛化,Enable Peeking
+Enable RSA Patch,Enable RSA Patch,启用 RSA补丁,啟用 RSA補丁,Enable RSA Patch
 Enable automatic forward teleporation between teleports,Enable automatic forward teleporation between teleports,启用后，自动传送下一个点位。,啟用後，自動傳送下一個點位。,Enable automatic forward teleporation between teleports
 "Enable blocking and modifying packets by sniffer, can cause network lags.","Enable blocking and modifying packets by sniffer, can cause network lags.",启动 抓包阻塞和修改数据包，可能会导致网络延迟。,啟動 抓包阻塞和修改封包，可能會導致網絡延遲。,"Включить блокировку и изменение пакетов с помощью сниффера, может привести к задержкам в сети."
 "Enable capturing of packet info and sending to pipe, if it exists.","Enable capturing of packet info and sending to pipe, if it exists.",启用 捕获数据包信息并发送到管道(如果存在),啟用 捕獲封包信息並發送到管道(如果存在),"Включить захват информации о пакете и отправку по каналу, если он существует."
@@ -1135,6 +1138,8 @@ Minimap icons don't affected.","图标将根据缩放大小动态调整大小。
 Minimap icons don't affected."
 "If 'Instant Vacuum' is not checked, mob will be vacuumed at the specified speed.","If 'Instant Vacuum' is not checked, mob will be vacuumed at the specified speed.",如果没有勾选 [瞬间吸附]，生物将以指定的速度被吸附。,如果沒有勾選 [瞬間吸附]，生物將以指定的速度被吸附。,"Если 'Моментальный Вакуум' не включен, мобы будут втянуты с определённой скоростью."
 If Instant Bow Charge doesn't work:,If Instant Bow Charge doesn't work:,如果弓箭瞬间蓄力无效:,如果弓箭瞬間蓄力無效:,Если моментальная натяжка лука не работает:
+"If disabled, don't patch private RSA key","If disabled, don't patch private RSA key",如不启用自订，则不更改私人金钥。,如不啟用自訂，則不更改私人金鑰。,"If disabled, don't patch private RSA key"
+"If disabled, use grasscutter's public RSA key.","If disabled, use grasscutter's public RSA key.",如不启用自订，则使用grasscutter的公开金钥。,如不啟用自訂，則使用grasscutter的公開金鑰。,"If disabled, use grasscutter's public RSA key."
 "If enabled, any input will be blocked.","If enabled, any input will be blocked.",启用后，所有输入将无效。,啟用後，所有輸入將無效。,"Если включено, ввод будет заблокирован."
 "If enabled, kill aura will only affect monsters targeting/aggro towards you.","If enabled, kill aura will only affect monsters targeting/aggro towards you.",启用后，杀戮光环只会影响对你有仇恨的怪物。,啟用後，殺戮光環只會影響對你有仇恨的怪物。,"Если включено, то Kill-auta будет работать на агрессивных мобов перед вами."
 "If enabled, monsters won't be able to push you despite the distance or size","If enabled, monsters won't be able to push you despite the distance or size",启用后，无论距离和大小，怪物都无法推动你。,啟用後，無論距離和大小，怪物都無法推動你。,"If enabled, monsters won't be able to push you despite the distance or size"
@@ -1188,7 +1193,7 @@ Instant Death Mode,Instant Death Mode,即死模式,即死模式,Режим мо�
 Instant Vacuum,Instant Vacuum,瞬间吸附,瞬間吸附,Моментальный вакуум
 Instant death mode,Instant death mode,即死模式,即死模式,Режим моментального убийства
 Instantly destroys non-living objects within range.,Instantly destroys non-living objects within range.,自动摧毁范围内的 非生物 物体,自動摧毀範圍內的 非生物 物體,Моментально разрушает не живые объекты на определённом расстоянии.
-Interaction Rewards,Interaction Rewards,交互奖励,交互奖励,Interaction Rewards
+Interaction Rewards,Interaction Rewards,交互奖励,互動獎勵,Interaction Rewards
 Interactive map,Interactive map,交互式地图,互動式地圖,Интерактивная карта
 Interface Customization,Interface Customization,定制界面,定制界面,Interface Customization
 Interpolate,Interpolate,插值,插值,Interpolate
@@ -1229,9 +1234,9 @@ Keep game time the same,Keep game time the same,保持游戏时间在一个固�
 Keqing,Keqing,刻晴,刻晴,Keqing
 Key,Key,钥匙,鑰匙,Key
 Key Sigil,Key Sigil,键纹,鍵紋,Знак-ключ
-Key Sigil II,Key Sigil II,键纹 II,鍵紋 II,Key Sigil II
-Key Sigil III,Key Sigil III,键纹 III,鍵紋 III,Key Sigil III
-Key Sigil IV,Key Sigil IV,键纹 IV,鍵紋 IV,Key Sigil IV
+Key Sigil II,Key Sigil II,键纹 II,鍵紋 II,Знак-ключ II
+Key Sigil III,Key Sigil III,键纹 III,鍵紋 III,Знак-ключ III
+Key Sigil IV,Key Sigil IV,键纹 IV,鍵紋 IV,Знак-ключ IV
 Key of Khaj-Nisut,Key of Khaj-Nisut,圣显之钥,聖顯之鑰,Key of Khaj-Nisut
 Key to exit the game.,Key to exit the game.,退出游戏的按键,退出遊戲的按鍵,Кнопка для моментального выхода из игры.
 Key to hold down before clicking on target location.,Key to hold down before clicking on target location.,传送前需要按住的键位,傳送前需要按住的鍵位,Key to hold down before clicking on target location.
@@ -1499,7 +1504,7 @@ Pine Wood,Pine Wood,松木,松木,Pine Wood
 Pinecone,Pinecone,松果,松果,Сосновая шишка
 Pipe name,Pipe name,管道名,管道名,Имя канала
 Pipe name for connecting. Changes will apply after next game launch.,Pipe name for connecting. Changes will apply after next game launch.,用于连接的管道名称。更改将在下次游戏启动时生效。,用於連接的管道名稱。更改將在下次遊戲啟動時生效。,Имя канала для подключения. Изменения вступят в силу после перезапуска игры
-Pirate Helm,Pirate Helm,海盗船指针(清籁丸),海盜頭盔(?),Пиратский Шлем
+Pirate Helm,Pirate Helm,海盗船指针(清籁丸),海盜船指針(清籟丸),Пиратский Шлем
 Placesof Essence Worship,Placesof Essence Worship,精华拜受处,精華拜受處,Места поклонения
 Plant,Plant,植物,植物,Растение
 Plants,Plants,植物,植物,Растения
@@ -1792,7 +1797,7 @@ Show Skill Cooldowns,Show Skill Cooldowns,显示技能冷却,顯示技能冷卻,
 Show Status Window,Show Status Window,显示状态窗口,顯示狀態視窗,Показывать окно с текущими функциями
 Show Theme Customization,Show Theme Customization,显示ImGui定制主题,顯示ImGui定制主題,Показать кастомизацию тем
 Show Type,Show Type,显示类型,顯示類型,Show Type
-Show arrows with icons.,Show arrows with icons.,显示带有图标的箭头,Show arrows with icons.,Show arrows with icons.
+Show arrows with icons.,Show arrows with icons.,显示带有图标的箭头,顯示帶有圖標得箭頭,Show arrows with icons.
 "Show chests, game mechanics.","Show chests, game mechanics.",显示宝箱、游戏机制。,顯示寶箱、遊戲機制。,"Показывает сундуки, механики игры."
 Show completed,Show completed,显示完成,顯示完成,Show completed
 Show completed points.,Show completed points.,显示完成点位.,顯示完成點位.,Show completed points.
@@ -2122,3 +2127,18 @@ command line arguments,command line arguments,命令行参数,命令行參數,А
 list,list,列表,列表,список
 not found,not found,未找到,未找到,не найдено
 |Fixed,|Fixed,固定,固定,|Fixed
+Bluethunder Weasel,Bluethunder Weasel,青雷鼬,青雷鼬,Хорёк синей молнии
+Lumenlamp,Lumenlamp,明石灯,明石燈,Светоносная лампа
+The Black Serpents,The Black Serpents,黯色空壳,黯色空殼,The Black Serpents
+Abyss Herald,Abyss Herald,深渊使徒,深淵使徒,Вестник Бездны
+Deep Sea Unagi,Deep Sea Unagi,深海鳗鳗,深海鰻鰻,Глубоководный угорь
+Divda Ray,Divda Ray,迪芙妲鳐,迪芙妲鰩,Дивдинский скат
+Formalo Ray,Formalo Ray,佛玛洛鳐,佛瑪洛鰩,Фумарольный скат
+Smashed Stone,Smashed Stone,碎石堆,碎石堆,Smashed Stone
+Places of Essence Worship,Places of Essence Worship,精华受拜处,精華受拜處,Places of Essence Worship
+"\""Day-Night\"" Switching Mechanism","\""Day-Night\"" Switching Mechanism",日夜切换机关,日夜切換機關,"\""Day-Night\"" Switching Mechanism"
+Bathysmal Vishap Herd,Bathysmal Vishap Herd,深海龙蜥之群,深海龍蜥之群,Вишап глубин
+Bathysmal Vishap,Bathysmal Vishap,深海龙蜥,深海龍蜥,Вишап глубин
+Key Sigil I,Key Sigil I,键纹 I,鍵紋 I,Знак-ключ I
+Key Sigil V,Key Sigil V,键纹 I,鍵紋 V,Знак-ключ ?
+Seal Location ?,Seal Location ?,键纹解锁点 ?,鍵紋解鎖點 ?,Seal Location ?
