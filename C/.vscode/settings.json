@@ -84,7 +84,8 @@
     "bitset": "cpp",
     "span": "cpp",
     "regex": "cpp",
-    "list": "cpp"
+    "list": "cpp",
+    "variant": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled", // 格式化時調整include的順序（按字母排序）
 }

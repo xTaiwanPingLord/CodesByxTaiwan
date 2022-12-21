@@ -12,19 +12,19 @@ for langs in translations:
     print(langs)
     languages_json[langs]['translates'] = translations[langs]
 
-    print(R'Fixing \r\n to \n ---------------------------')
-    tmp = dict()
-    for k, v in languages_json[langs]['translates'].items():
-        tmp[k.replace('\r', '')] = v.replace('\r', '')
-    languages_json[langs]['translates'] = tmp
-    del tmp
-
     print(R'Fixing blank value(aka "NaN") ---------------')
     for k, v in languages_json[langs]['translates'].items():
         if not isinstance(v, str):
             print(
                 f'lang = {langs}: key = {k} | value = {v} (type = {type(v)})')
             languages_json[langs]['translates'][k] = 'NEED TO BE TRANSLATED'
+
+    print(R'Fixing \r\n to \n and spaces ----------------')
+    tmp = dict()
+    for k, v in languages_json[langs]['translates'].items():
+        tmp[k.replace('\r', '').replace(u'\u0020', ' ')] = v.replace('\r', '').replace(u'\u0020', ' ')
+    languages_json[langs]['translates'] = tmp
+    del tmp
 
 with open('languages.json', 'w', encoding='utf-8') as file:
     json.dump(languages_json.to_dict(), file, indent=2,
