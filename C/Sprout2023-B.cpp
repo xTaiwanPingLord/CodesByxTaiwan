@@ -8,7 +8,8 @@ int main()
 
     string magicbook, question, temp, prev;
     map<int, char> magicmap;
-    int len, num_quiz, T, X, count;
+    int len, num_quiz, T, X, count = 0;
+    vector<string> result;
 
     cin >> magicbook;
     cin >> len >> num_quiz;
@@ -18,27 +19,20 @@ int main()
     {
         magicmap[i] = magicbook[i];
     }
+    prev = question;
+    do
+    {
+        result.push_back(prev);
+        temp = prev;
+        for (int j = 0; j < len; j++)
+            temp[j] = magicmap[prev[j] - 65]; // (char) 'A' == 65
+        prev = temp;
+        count++;
+    } while (prev != question);
 
     for (int loop = 0; loop < num_quiz; loop++)
     {
-        count = 0;
         cin >> T >> X;
-        prev = question;
-        for (int i = 0; i < T; i++)
-        {
-            temp.assign(len, ' ');
-            for (int j = 0; j < len; j++)
-                temp[j] = magicmap[prev[j] - 65]; // (char) 'A' == 65
-            prev = temp;
-            count++;
-
-            if (prev == question) // 找到規律
-            {
-                T = T % count;
-                i = -1; // -1 becuz i++
-                prev = question;
-            }
-        }
-        cout << prev[X - 1] << "\n";
+        cout << result[T % count][X - 1] << "\n";
     }
 }
