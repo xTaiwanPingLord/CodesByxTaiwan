@@ -128,12 +128,12 @@ int main()
     {
         if (player_alive[current_player])
         {
-            cout << "player: " << current_player;
+            // cout << "player: " << current_player;
             the_card = "";
             priority_value = 0;
             for (const string &card : player_cards[current_player])
             {
-                cout << "  \t| " << card << " " << player_priority[current_player][card];
+                // cout << "  \t| " << card << " " << player_priority[current_player][card];
                 if (score + CountScore(card, score, true, direction) > 99) // 不能出
                     continue;
                 else if (player_priority[current_player][card] > priority_value) // 能出，且找到更高優先度的卡
@@ -145,19 +145,19 @@ int main()
 
             if (the_card != "") // 有任何一張卡 -> 算分 + 抽卡
             {
-                cout << " -> " << the_card << "\t| org score: " << score;
+                // cout << " -> " << the_card << "\t| org score: " << score;
                 score += CountScore(the_card, score, false, direction);
                 player_cards[current_player].erase(find(player_cards[current_player].begin(), player_cards[current_player].end(), the_card));
                 if (score < 0)
                     score = 0;
                 if (!card_stack.empty())
                     GetOneCard(card_stack, player_cards[current_player]);
-                cout << " now score: " << score << endl;
+                // cout << " now score: " << score << endl;
             }
             else // 沒有卡 -> 淘汰
             {
                 player_alive[current_player] = false;
-                cout << "out" << endl;
+                // cout << " \t | out!!" << endl;
             }
         }
         NextPlayer(direction, current_player); // 下一位
@@ -167,6 +167,5 @@ int main()
     {
         if (player_alive[i])
             cout << (i + 1) << " ";
-        ;
     }
 }
