@@ -133,7 +133,7 @@ int main()
             priority_value = 0;
             for (const string &card : player_cards[current_player])
             {
-                cout << " | " << card << " " << player_priority[current_player][card];
+                cout << "  \t| " << card << " " << player_priority[current_player][card];
                 if (score + CountScore(card, score, true, direction) > 99) // 不能出
                     continue;
                 else if (player_priority[current_player][card] > priority_value) // 能出，且找到更高優先度的卡
@@ -145,7 +145,7 @@ int main()
 
             if (the_card != "") // 有任何一張卡 -> 算分 + 抽卡
             {
-                cout << " -> " << the_card << " org score: " << score;
+                cout << " -> " << the_card << "\t| org score: " << score;
                 score += CountScore(the_card, score, false, direction);
                 player_cards[current_player].erase(find(player_cards[current_player].begin(), player_cards[current_player].end(), the_card));
                 if (score < 0)
