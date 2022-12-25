@@ -10,14 +10,12 @@ int main()
     for (int i = 0; i < Num; i++)
     {
         cin >> people;
-        if (people < K / 2) // 往上或往下都可以吧 反正往同一個方向就好
+        if ((float)people < (float)K / 2.0) // 往上或往下都可以吧 反正往同一個方向就好
             people = K - people;
         if (people < Min)
             Min = people;
         if (people > Max)
             Max = people;
     }
-
     cout << (Max - Min);
 }
-

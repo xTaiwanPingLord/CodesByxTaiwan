@@ -1,67 +1,58 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-queue<string> card_stack;
-map<int, vector<string>> player_card;
-map<int, map<string, int>> player_priority;
-int current_player = 0, score = 0;
-vector<bool> out(4, false);
-bool direction = true;
-
-void GetCard()
+void Inputs(queue<string> &stack, map<int, map<string, int>> &priority)
 {
-    player_card[current_player].push_back(card_stack.front());
-    card_stack.pop();
-}
-
-void NextPlayer()
-{
-    if (direction)
+    string card;
+    for (int i = 0; i < 52; i++) // 卡堆
     {
-        current_player < 3 ? current_player++ : current_player = 0; // 升序
-    }
-    else
-    {
-        current_player > 0 ? current_player-- : current_player = 3; // 降序
-    }
-}
-
-void Inputs()
-{
-    for (int i = 0; i < 52; i++)
-    {
-        string tmp;
-        cin >> tmp;
-        card_stack.push(tmp);
+        cin >> card;
+        stack.push(card);
     }
 
-    for (int i = 0; i < 20; i++)
+    int input_priority; // 順序
+    for (int player = 0; player < 4; player++)
     {
-        GetCard();
-        NextPlayer();
-    }
-    int tmp;
-    for (int i = 0; i < 4; i++)
-    {
-        for (const string &n : {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"})
+        for (const string &number : {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"})
         {
-            for (const string &c : {"S", "H", "D", "C"})
+            for (const string &color : {"S", "H", "D", "C"})
             {
-                
-                cin >> tmp;
-                player_priority[i][c + n] = tmp;
-                // cout << (c + n) << " : " << tmp << " result: " << player_priority[i][c + n] << endl;
+                cin >> input_priority;
+                priority[player][color + number] = input_priority;
             }
         }
     }
 }
 
-int CountScore(string _card, bool pseudo)
+void GetOneCard(queue<string> &stack, vector<string> &the_player_card)
 {
-    switch (_card.back())
+    the_player_card.push_back(stack.front()); // 抽一張卡
+    stack.pop();
+}
+
+bool Stop(const vector<string> &the_player_card, const vector<bool> &alive)
+{
+    if (the_player_card.empty()) // 檢查玩家有卡
+        return true;
+
+    int how_many_alives = 0; // 檢查 > 1 位玩家活著
+    for (const bool i : alive)
+    {
+        if (i)
+            how_many_alives++;
+    }
+    if (how_many_alives <= 1)
+        return true;
+
+    return false;
+}
+
+int CountScore(const string &card, int &score, const bool &pseudo, bool &direction)
+{
+    switch (card.back())
     {
     case 'A':
-        if (_card.front() == 'S')
+        if (card.front() == 'S')
         {
             if (!pseudo)
                 score = 0;
@@ -102,65 +93,80 @@ int CountScore(string _card, bool pseudo)
     return 0;
 }
 
-bool Finished()
+void NextPlayer(const bool &direction, int &current_player)
 {
-    int tmp = 0;
-    for (int i = 0; i < 4; i++)
+    if (direction)
     {
-        if (!out[i] && !player_card[i].empty())
-            tmp++;
+        current_player < 3 ? current_player++ : current_player = 0; // 升序
     }
-    if (tmp > 1)
-        return true;
-    return false;
+    else
+    {
+        current_player > 0 ? current_player-- : current_player = 3; // 降序
+    }
 }
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
+    queue<string> card_stack;
+    map<int, map<string, int>> player_priority;
+    vector<vector<string>> player_cards(4);
+    vector<bool> player_alive(4, true);
+    int current_player, score = 0, priority_value;
+    bool direction = true;
     string the_card;
 
-    Inputs();
+    Inputs(card_stack, player_priority);
 
-    do
+    for (int i = 0; i < 5; i++) // 一個人發5張卡
     {
-        cout << "player: " << current_player;
-        if (!out[current_player])
+        for (current_player = 0; current_player < 4; current_player++)
+            GetOneCard(card_stack, player_cards[current_player]);
+    }
+    current_player = 0;
+
+    while (!Stop(player_cards[current_player], player_alive))
+    {
+        if (player_alive[current_player])
         {
-            the_card = player_card[current_player][0];
-            for (const string &card : player_card[current_player])
+            cout << "player: " << current_player;
+            the_card = "";
+            priority_value = 0;
+            for (const string &card : player_cards[current_player])
             {
-                if (score + CountScore(card, true) <= 99 && score + CountScore(the_card, true) > 99) // 先選不會爆炸的卡
-                    the_card = card;
-                else if (player_priority[current_player][card] > player_priority[current_player][the_card] && score + CountScore(card, true) <= 99) // 選更好的卡
-                    the_card = card;
                 cout << " | " << card << " " << player_priority[current_player][card];
+                if (score + CountScore(card, score, true, direction) > 99) // 不能出
+                    continue;
+                else if (player_priority[current_player][card] > priority_value) // 能出，且找到更高優先度的卡
+                {
+                    priority_value = player_priority[current_player][card];
+                    the_card = card;
+                }
             }
-            cout << " -> " << the_card << " org score: " << score;
-            score += CountScore(the_card, false); // 加加看
-            if (score < 0)
-                score = 0;
-            else if (score > 99)
+
+            if (the_card != "") // 有任何一張卡 -> 算分 + 抽卡
             {
-                score -= CountScore(the_card, false);
-                out[current_player] = true;
-            }
-            else
-            {
-                player_card[current_player].erase(find(player_card[current_player].begin(), player_card[current_player].end(), the_card));
+                cout << " -> " << the_card << " org score: " << score;
+                score += CountScore(the_card, score, false, direction);
+                player_cards[current_player].erase(find(player_cards[current_player].begin(), player_cards[current_player].end(), the_card));
+                if (score < 0)
+                    score = 0;
                 if (!card_stack.empty())
-                    GetCard();
+                    GetOneCard(card_stack, player_cards[current_player]);
+                cout << " now score: " << score << endl;
             }
-            cout << " after score: " << score;
+            else // 沒有卡 -> 淘汰
+            {
+                player_alive[current_player] = false;
+                cout << "out" << endl;
+            }
         }
-        cout << endl;
-        NextPlayer();
-    } while (Finished());
+        NextPlayer(direction, current_player); // 下一位
+    }
 
     for (int i = 0; i < 4; i++)
     {
-        if (out[i] == false)
-g            cout << (i + 1) << " ";
+        if (player_alive[i])
+            cout << (i + 1) << " ";
+        ;
     }
 }
