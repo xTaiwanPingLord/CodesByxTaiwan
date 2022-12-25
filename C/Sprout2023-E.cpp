@@ -6,14 +6,18 @@ int main()
     int Num, K;
     cin >> Num >> K;
 
-    vector<int> people(2 * Num, 0);
-    for (int i = 0; i < 2 * Num; i += 2)
+    int people, Min = 1000000001, Max = 0;
+    for (int i = 0; i < Num; i++)
     {
-        cin >> people[i];
+        cin >> people;
+        if (people < K / 2) // 往上或往下都可以吧 反正往同一個方向就好
+            people = K - people;
+        if (people < Min)
+            Min = people;
+        if (people > Max)
+            Max = people;
     }
-    for (int i = 1; i < 2 * Num; i+=2)
-    {
-        people[i] = K - people[i - 1];
-    }
-    
+
+    cout << (Max - Min);
 }
+
