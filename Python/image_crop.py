@@ -15,7 +15,8 @@ config = {'images_path': 'dataset\pictures',
           'output_path': 'dataset\output',
           'transform': 'RandomCrop',
           'outputs_from_oneimage': 5,
-          'image_size': 512
+          'image_size': 512,
+          'image_resize_scale' : 2
           }
 
 
@@ -41,7 +42,7 @@ def WriteImages(image, main: int, sec: int, output_path: str):
     cv2.imwrite(os.path.join(output_path, f'output_{main}-{sec}.png'),
                         cv2.cvtColor(image*255, cv2.COLOR_RGB2BGR)) # to convert float[0,1] to 0,255
 
-def ImageTransforms(image: np.array, transform_name: str, image_size: int):
+def ImageTransforms(image: np.array, transform_name: str, image_size: int, scale: int):
     if transform_name not in ['', 'RandomCrop', 'RandomCropWithPadding']:
         raise ValueError(f"Wrong transform name: {transform_name}"
                          "supported:'', 'RandomCrop', 'RandomCropWithPadding'")
@@ -52,7 +53,7 @@ def ImageTransforms(image: np.array, transform_name: str, image_size: int):
     if transform_name == 'RandomCrop':
         transform = torchvision.transforms.Compose([
             torchvision.transforms.ToTensor(),
-            torchvision.transforms.Resize([image_size*2, image_size*2]),
+            torchvision.transforms.Resize([image_size*scale, image_size*scale]),
             torchvision.transforms.RandomCrop([image_size, image_size])
         ])
 
@@ -71,7 +72,7 @@ if __name__ == '__main__':
     for main in tqdm.tqdm(range(len(org_images))):
         for sec in range(config['outputs_from_oneimage']):
             image = ImageTransforms(
-                org_images[main], config['transform'], config['image_size'])
+                org_images[main], config['transform'], config['image_size'], config['image_resize_scale'])
             WriteImages(image, main, sec, config['output_path'])
 
     print('done')
