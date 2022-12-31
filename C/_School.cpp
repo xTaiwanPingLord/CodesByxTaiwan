@@ -1,84 +1,112 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define MAX_SIZE 10
 
-#define size 5
-
-bool IsEmpty(int top)
+class Queue
 {
-    if (top < 0)
-        return true;
-    return false;
-}
+public:
+    int value[MAX_SIZE];
+    int front, end;
 
-bool IsFull(int top)
-{
-    if (top < size - 1)
+    Queue()
+    {
+        front = 0;
+        end = 0;
+        for (int &i : value)
+        {
+            i = -1;
+        }
+    }
+
+    bool IsEmpty()
+    {
+        if (front == end)
+            return true;
         return false;
-    return true;
-}
-
-bool Push(int stack[], int *top, int value)
-{
-    if (!IsFull(*top))
-    {
-        stack[*top + 1] = value;
-        *top += 1;
-        return true;
     }
-    return false;
-}
 
-bool Pop(int stack[], int *top)
-{
-    if (!IsEmpty(*top))
+    bool IsFull()
     {
-        stack[*top] = -1;
-        *top -= 1;
-        return true;
+        if (end == MAX_SIZE && front != 0)
+            Move();
+        if (end == MAX_SIZE) // 沒辦法移動了
+            return true;
+        return false;
     }
-    return false;
-}
 
-int Top(int stack[], int *top)
-{
-    return stack[*top];
-}
+    bool EnQueue(int item)
+    {
+        if (!IsFull())
+        {
+            value[end] = item;
+            end++;
+            return true;
+        }
+        return false;
+    }
+
+    bool DeQueue()
+    {
+        if (!IsEmpty())
+        {
+            value[front] = -1;
+            front++;
+            return true;
+        }
+        return false;
+    }
+
+    int Front()
+    {
+        if (!IsEmpty())
+            return value[front];
+        return -1;
+    }
+
+    void Move()
+    {
+        int idx = 0;
+        for (int i = front; i < end; i++)
+        {
+            value[idx] = value[i];
+            value[i] = -1;
+            idx++;
+        }
+        end -= front;
+        front = 0;
+    }
+};
 
 int main()
 {
-    // ios::sync_with_stdio(false);
-    // cin.tie(0);
-
-    int input = 0, value, top = -1;
-    int stack[size];
-    for (auto &i : stack)
-        i = -1;
-
-    while (input != -1)
+    int input, value;
+    Queue queue1;
+    do
     {
-        cout << "push:1, pop:2, end:-1 \n";
-        cin >> input;
+        printf("enqueue:1 dequeue:2 結束-1\n");
+        scanf("%d", &input);
         if (input == 1)
         {
-            cout << "push value: \n";
-            cin >> value;
-            if (Push(stack, &top, value))
-                cout << "pushed \n";
-            else
-                cout << "not pushed \n";
+            printf("enqueue value:");
+            scanf("%d", &value);
+            if (!queue1.EnQueue(value))
+                printf("\n    reached MAX SIZE\n");
         }
         else if (input == 2)
         {
-            if (Pop(stack, &top))
-                cout << "poped \n";
-            else
-                cout << "not poped \n";
+            printf("get and dequeue value:%d\n", queue1.Front());
+            queue1.DeQueue();
         }
+    } while (input != -1);
 
-        // for (auto i : stack)
-        // {
-        //     cout << i << " ";
-        // }
-        // cout << top << endl;
+    printf("\nraw: \n");
+    for (const int &i : queue1.value)
+    {
+        printf("%d, ", i);
+    }
+    printf("\nqueue: \n");
+    for (int i = queue1.front; i < queue1.end; i++)
+    {
+        printf("%d, ", queue1.value[i]);
     }
 }
