@@ -3,29 +3,39 @@ using namespace std;
 
 int main()
 {
-    int num;
-    cin >> num;
-    vector<string> straw(num);
-    string temp;
-    int count = 0;
-    for (auto &i : straw)
-        cin >> i;
+    stack<int> tree;
+    stack<int> history;
+    uint64_t ans = 0;
+    int input, prev;
 
-    sort(straw.begin(), straw.end());
-    
-    for (auto i = 0; i < num; i++)
+    cin >> input;
+    tree.push(input);
+    history.push(-1);
+
+    while (!tree.empty())
     {
-        for (auto j = 1; (uint64_t)j * 2 < straw[i].size(); j++)
+        prev = (uint64_t)tree.top();
+        history.top()++;
+        // cout << tree.top() << " " << history.top() << "\t| prev: " << prev << "\t| " << ans << endl;
+
+        if (tree.top() % 2 + 2 == history.top())
         {
-            temp = straw[i].substr(0, j);
-            if(temp != straw[i].substr(straw[i].size() - j))
+            tree.pop();
+            history.pop();
+        }
+        else
+        {
+            cin >> input;
+            tree.push(input);
+            history.push(-1);
+            if (input == 0)
+            {
+                tree.pop();
+                history.pop();
                 continue;
-
-            temp = straw[i].substr(j, straw[i].size() - j * 2);
-
-            if(binary_search(straw.begin(), straw.end(), temp))
-                count++;
+            }
+            ans += abs(input - prev);
         }
     }
-    cout << count;
+    cout << ans;
 }
