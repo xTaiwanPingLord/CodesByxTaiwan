@@ -7,35 +7,24 @@ int main()
     cin >> num;
     vector<string> straw(num);
     string temp;
-    int half;
     int count = 0;
-    bool is_true;
     for (auto &i : straw)
         cin >> i;
 
+    sort(straw.begin(), straw.end());
+    
     for (auto i = 0; i < num; i++)
     {
-        for (auto j = i + 1; j < num; j++)
+        for (auto j = 1; (uint64_t)j * 2 < straw[i].size(); j++)
         {
-            temp = straw[i] + straw[j];
-            half = temp.length();
-            if (half % 2 == 0)
-                half = half / 2;
-            else
+            temp = straw[i].substr(0, j);
+            if(temp != straw[i].substr(straw[i].size() - j))
                 continue;
-            
-            is_true = true;
-            for (auto k = 0; k < half; k++)
-            {
-                if (temp[k] != temp[k + half])
-                {
-                    is_true = false;
-                    break;
-                }
-            }
-            if (is_true)
+
+            temp = straw[i].substr(j, straw[i].size() - j * 2);
+
+            if(binary_search(straw.begin(), straw.end(), temp))
                 count++;
-            // binary_search()
         }
     }
     cout << count;
