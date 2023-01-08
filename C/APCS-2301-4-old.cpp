@@ -1,8 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void sort_by_end_time(vector<int> &seq, const vector<int> &busy, const int &start_time)
+void write(vector<bool> &vct, const int &start, const int &end)
 {
+    for (int i = start; i <= end; i++)
+        vct[i] = true;
+}
+
+bool check(vector<bool> &vct, const int &start, const int &end)
+{
+    for (int i = start; i <= end; i++)
+    {
+        if (vct[i] == true)
+            return false;
+    }
+    return true;
 }
 
 int main()
@@ -27,24 +39,15 @@ int main()
          [](vector<int> a, vector<int> b) -> bool
          { return a[2] < b[2]; });
 
+    vector<vector<bool>> machine(num_machine, vector<bool>(10e8 + 1));
     int ans = 0;
-    vector<int> machine_busy(num_machine, 0);
-    vector<int> machine_seq(num_machine, 0);
-
-    for (int i = 0; i < num_machine; i++)
-        machine_seq[i] = i;
-
     for (int i = 0; i < num_event; i++)
     {
-        sort(machine_seq.begin(), machine_seq.end(),
-             [&](int a, int b) -> bool
-             { return event[i][a] - machine_busy[a] < event[i][b] - machine_busy[b]; });
-
-        for (const int &j : machine_seq)
+        for (int j = 0; j < num_machine; j++)
         {
-            if (machine_busy[j] < event[i][0])
+            if (check(machine[j], event[i][0], event[i][1]))
             {
-                machine_busy[j] = event[i][1];
+                write(machine[j], event[i][0], event[i][1]);
                 ans++;
                 break;
             }
