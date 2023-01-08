@@ -1,41 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+bool sortbysec(const pair<int,int> &a,
+              const pair<int,int> &b)
+{
+    return (a.second < b.second);
+}
+
+void print(vector<pair<int, int>> &input)
+{
+    for (auto &i : input)
+        cout << i.first << "\t" << i.second << "\n";
+}
+
 int main()
 {
-    stack<int> tree;
-    stack<int> history;
-    uint64_t ans = 0;
-    int input, prev;
+    int num, len, max_h = 0;
+    cin >> num >> len;
 
-    cin >> input;
-    tree.push(input);
-    history.push(-1);
+    vector<pair<int, int>> tree(num, pair<int, int>(0, 0));
+    vector<pair<int, int>> dist(num, pair<int, int>(0, 0));
 
-    while (!tree.empty())
-    {
-        prev = (uint64_t)tree.top();
-        history.top()++;
-        // cout << tree.top() << " " << history.top() << "\t| prev: " << prev << "\t| " << ans << endl;
+    for (auto &i : tree)
+        cin >> i.first;
+    for (auto &i : tree)
+        cin >> i.second;
 
-        if (tree.top() % 2 + 2 == history.top())
-        {
-            tree.pop();
-            history.pop();
-        }
-        else
-        {
-            cin >> input;
-            tree.push(input);
-            history.push(-1);
-            if (input == 0)
-            {
-                tree.pop();
-                history.pop();
-                continue;
-            }
-            ans += abs(input - prev);
-        }
-    }
-    cout << ans;
+    print(tree);
+
+    cout << endl;
+
+    sort(tree.begin(), tree.end(), sortbysec);
+    print(tree);
+
 }
