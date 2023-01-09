@@ -1,57 +1,52 @@
+// #define FMT_HEADER_ONLY
+// #include <fmt/include/fmt/core.h>
+
 #include <bits/stdc++.h>
 using namespace std;
 
-void sort_by_end_time(vector<int> &seq, const vector<int> &busy, const int &start_time)
-{
-}
-
 int main()
 {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
     int num_event, num_machine;
     cin >> num_event >> num_machine;
 
-    vector<vector<int>> event(num_event, vector<int>(3, 0)); // start, end, time used
-    for (int i = 0; i < 2; i++)
-    {
-        for (auto j = 0; j < num_event; j++)
-            cin >> event[j][i];
-    }
-    for (int i = 0; i < num_event; i++) // calc time used
-        event[i][2] = event[i][1] - event[i][0];
-
-    sort(event.begin(), event.end(), // sort by start time first
-         [](vector<int> a, vector<int> b) -> bool
-         { return a[0] < b[0]; });
-
-    sort(event.begin(), event.end(), // then sort by time used
-         [](vector<int> a, vector<int> b) -> bool
-         { return a[2] < b[2]; });
-
-    int ans = 0;
-    vector<int> machine_busy(num_machine, 0);
-    vector<int> machine_seq(num_machine, 0);
-
-    for (int i = 0; i < num_machine; i++)
-        machine_seq[i] = i;
-
+    vector<pair<int, int>> event(num_event); // start, end
     for (int i = 0; i < num_event; i++)
-    {
-        sort(machine_seq.begin(), machine_seq.end(),
-             [&](int a, int b) -> bool
-             { return event[i][a] - machine_busy[a] < event[i][b] - machine_busy[b]; });
+        cin >> event[i].first;
+    for (int i = 0; i < num_event; i++)
+        cin >> event[i].second;
 
-        for (const int &j : machine_seq)
+    sort(event.begin(), event.end(), // sort by end time first, if same sort by start time (small -> large)
+         [](pair<int, int> a, pair<int, int> b) -> bool
+         { if(a.second == b.second) return a.first < b.first;
+            else return a.second < b.second; });
+
+    // for (int i = 0; i < num_event; i++)
+    //     fmt::print("{}: {}\n", i, fmt::join(event[i], ", "));
+
+    int ans = 0, which_machine_max = -10;
+    vector<int> machine_busy(num_machine, -1);
+
+    for (int i = 0; i < num_event; i++) // 掃過每個event
+    {
+        for (int j = 0; j < num_machine; j++)
         {
-            if (machine_busy[j] < event[i][0])
-            {
-                machine_busy[j] = event[i][1];
-                ans++;
-                break;
-            }
+            if (machine_busy[j] < event[i].first && which_machine_max == -10)                                // if機器可用且沒有其他數字。如果放到下面，machine_busy[which_machine_max] 會超過範圍。
+                which_machine_max = j;                                                                       // 存index
+            else if (machine_busy[j] < event[i].first && machine_busy[j] >= machine_busy[which_machine_max]) // if機器可用且最大
+                which_machine_max = j;                                                                       // 存index
+        }
+        // fmt::print("\nwhich_machine_max: {}\nmachine busy: {}\nevent: {}\nans: {}\n", which_machine_max, fmt::join(machine_busy, ", "), fmt::join(event[i], ", "), ans);
+
+        if (which_machine_max != -10)
+        {
+            machine_busy[which_machine_max] = event[i].second;
+            ans++;
+            which_machine_max = -10;
         }
     }
 
-    // for (int i = 0; i < num_event; i++) // print event vector
-    //     cout << event[i][0] << " " << event[i][1] << " " << event[i][2] << " \n";
-    cout << ans;
+    cout << ans << endl;
 }
