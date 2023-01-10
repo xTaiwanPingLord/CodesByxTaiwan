@@ -9,7 +9,8 @@
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "FMT_DEBUG"
             ],
             "windowsSdkVersion": "10.0.19041.0",
             "compilerPath": "C:\\_APP\\TDM-GCC\\bin\\g++.exe",
