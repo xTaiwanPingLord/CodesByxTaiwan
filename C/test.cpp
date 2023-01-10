@@ -1,4 +1,3 @@
-#pragma region some_def
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,13 +20,12 @@ inline T ReadOne()
     std::cin >> temp;
     return temp;
 }
-#pragma endregion some_def
 
 int main()
 {
     cout << "yes" << endl;
-    fmt::print("YES");
+    fmt::print("YES\n");
 
-    string test = ReadOne<string>();
+    const char* test = ReadOne<string>().c_str();
     cout << test;
 }
